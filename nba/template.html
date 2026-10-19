@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NBA Edge Board</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#14171c;--mute:#69707d;--line:#e3e6eb;--star:#c98a00;--bad:#c2372f;--warn:#b25e00;--good:#1d8a4b;--chip:#eef1f5}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#181b21;--ink:#eceef2;--mute:#9aa1ad;--line:#2a2f38;--star:#f2b532;--bad:#ff6b61;--warn:#ffa04d;--good:#4cc685;--chip:#232831}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header{padding:20px 16px 8px;max-width:1100px;margin:auto}h1{margin:0;font-size:22px}
+.sub{color:var(--mute);font-size:12px;margin-top:4px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.filters button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer;font-size:13px}
+.filters button.on{background:var(--ink);color:var(--bg)}
+main{max-width:1100px;margin:auto;padding:0 16px 40px}
+h2{font-size:14px;color:var(--mute);text-transform:uppercase;letter-spacing:.05em;margin:22px 0 8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px}
+.card.prime{border-color:var(--star);box-shadow:0 0 0 1px var(--star) inset}
+.top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+.title{font-weight:650;font-size:16px}.meta{color:var(--mute);font-size:12px}
+.line{display:flex;gap:14px;flex-wrap:wrap;margin:8px 0 4px;font-variant-numeric:tabular-nums}
+.line b{font-size:15px}
+.books{font-size:12px;color:var(--mute)}
+.teams{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+@media(max-width:640px){.teams{grid-template-columns:1fr}}
+.team{border-top:1px solid var(--line);padding-top:8px}
+.tname{display:flex;align-items:center;gap:8px;font-weight:600}.tname img{width:22px;height:22px}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0}
+.chip{background:var(--chip);border-radius:6px;padding:2px 7px;font-size:12px}
+.chip.bad{color:var(--bad);font-weight:600}.chip.warn{color:var(--warn);font-weight:600}.chip.good{color:var(--good)}
+.stars{font-size:13px}.stars div{display:flex;justify-content:space-between;gap:8px}
+.st-Out{color:var(--bad);font-weight:600}.st-Questionable,.st-Day-To-Day,.st-Doubtful{color:var(--warn);font-weight:600}.st-Active{color:var(--good)}
+.badge{color:var(--star);font-weight:700;font-size:12px}
+.live{color:var(--bad);font-weight:700}
+.coach{font-size:12.5px;margin-top:8px;border-top:1px dashed var(--line);padding-top:6px}.coach summary{cursor:pointer;font-weight:600}.coach ul{margin:4px 0 0 0;padding-left:18px}.rate{font-weight:700}.pro{color:var(--good)}.con{color:var(--bad)}
+.g-Elite{color:var(--good);font-weight:700}.g-Good{color:var(--good)}.g-Weak{color:var(--bad)}.g-Average{color:var(--mute)}
+.splits{margin-top:10px;display:grid;gap:8px}.sp-h{display:flex;justify-content:space-between;font-size:12px;color:var(--mute);margin-bottom:2px}
+.bar{display:flex;height:16px;border-radius:5px;overflow:hidden;font-size:11px;font-weight:600;line-height:16px;color:#fff}
+.bar span{padding:0 6px;white-space:nowrap;overflow:hidden}.bar .a{background:#5b6b82}.bar .h{background:#2f7d6d}
+.gap{color:var(--star);font-weight:700;font-size:12px}
+.sel{padding:6px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.rbtn{border:1px solid var(--line);background:var(--ink);color:var(--bg);border-radius:8px;padding:7px 14px;font-weight:600;cursor:pointer}.rbtn:disabled{opacity:.6;cursor:wait}
+.mk{width:100%;border-collapse:collapse;font-size:12.5px;font-variant-numeric:tabular-nums;margin-top:6px}
+.mk th{font-weight:600;color:var(--mute);text-align:left;padding:3px 6px;border-bottom:1px solid var(--line)}.mk td{padding:4px 6px;border-bottom:1px solid var(--line)}
+.val{color:var(--good);font-weight:700}.ctx{font-size:11.5px;color:var(--mute);font-style:italic}
+.spots{display:grid;gap:6px}.spot{font-size:13px}
+.bb{margin-top:10px;padding:10px 12px;border-radius:10px;border:1px solid var(--good);background:color-mix(in srgb,var(--good) 10%,transparent)}
+.bb .pick{font-size:16px;font-weight:700;color:var(--good)}.nobet{margin-top:10px;padding:8px 12px;border-radius:10px;border:1px dashed var(--line);color:var(--mute);font-size:13px}
+.empty{color:var(--mute);padding:30px 0}
+</style></head><body>
+<header>
+<div class="top"><h1>🏀 NBA Edge Board</h1> <a href="../nfl/dashboard.html" class="meta">🏈 NFL board →</a><button id="refresh" class="rbtn">↻ Refresh all stats</button></div>
+<div class="sub" id="sub"></div>
+<div class="filters" id="filters"></div>
+<div class="card bb" style="margin-top:12px" id="topbet"></div>
+<details class="card" style="margin-top:12px" id="pubcard"><summary class="title" style="cursor:pointer">👥 Public bettors</summary><div id="pubbox"></div></details>
+<div class="card" style="margin-top:12px"><div class="top"><div class="title">🎯 Best spots right now</div><a href="tools.html" class="meta">🧮 Calculator & bet log →</a></div><div class="spots" id="spots"></div></div>
+</header>
+<main id="main"></main>
+<script>const D=/*DATA*/null</script>
+<script>
+const F=[["all","All games"],["prime","⭐ Prime time"],["b2b","Back-to-back"],["blowout","Off 10+ pt loss"],["upset","Lost as favorite"],["starout","Star out/questionable"],["gap","💰 Money ≠ bets"]];
+let filt="all";try{filt=localStorage.getItem("nbaFilt")||"all"}catch(e){}
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function starIssue(t){return t.stars.some(p=>p.status!=="Active")}
+function match(g){const s=[g.away.situation,g.home.situation];
+ return filt==="all"||(filt==="prime"&&g.prime_time)||(filt==="b2b"&&s.some(x=>x.rest_days<=0))||
+ (filt==="blowout"&&s.some(x=>x.blowout_loss))||(filt==="upset"&&s.some(x=>x.upset_loss))||
+ (filt==="starout"&&(starIssue(g.away)||starIssue(g.home)))||(filt==="gap"&&gaps(g).length>0)}
+function gaps(g){const s=g.splits;if(!s)return[];const out=[];
+ for(const [m,a,b,la,lb] of [["spread","away","home",g.away.short,g.home.short],["moneyline","away","home",g.away.short,g.home.short],["total","over","under","Over","Under"]]){
+  for(const [side,lab] of [[a,la],[b,lb]]){const x=s[m]?.[side];if(x&&x.money!=null&&x.bets!=null&&x.money-x.bets>=10)out.push(`${lab} ${m=="moneyline"?"ML":m}: ${x.bets}% of bets but ${x.money}% of money`)}}
+ return out}
+function bar(title,a,b,la,lb){if(!a||!b)return"";const row=(k,lbl)=>`<div class="bar"><span class="a" style="width:${a[k]}%">${esc(la)} ${a[k]}%</span><span class="h" style="width:${b[k]}%">${esc(lb)} ${b[k]}%</span></div>`;
+ return `<div><div class="sp-h"><span>${title}</span><span>bets · money</span></div>${row("bets")}<div style="height:3px"></div>${row("money")}</div>`}
+const fmtO=o=>o==null?"—":(o>0?"+":"")+o;
+function mrow(label,m,a,b,la,lb,isSpread){if(!m)return"";
+ const cell=(s,l)=>{const best=m.best[s],line=m.line==null?"":(isSpread?(s===a?fmtO(m.line):fmtO(-m.line))+" ":"");
+  return `<td><b>${esc(l)}</b> ${line}</td><td>${m.fair[s]}% <span class="meta">(${fmtO(m.fair_odds[s])})</span></td><td>${fmtO(best.odds)} <span class="meta">${esc(best.book)}</span></td><td class="${m.value.includes(s)?'val':best.edge>-1?'':'meta'}">${best.edge>0?"+":""}${best.edge}%${m.value.includes(s)?" ✅":""}</td>`};
+ const mv=m.move!=null&&m.move!==0?` · moved ${m.move>0?"+":""}${m.move} since open`:m.move_pct?` · ${m.move_pct>0?"+":""}${m.move_pct}% since open`:"";
+ return `<tr><td colspan="4" class="meta" style="padding-top:8px"><b>${label}</b> · ${m.n_books} books · house cut ${m.avg_hold}% avg, ${m.best_hold}% at best prices${mv}${m.reliable?"":" · ⚠️ too few books to trust"}</td></tr>
+ <tr>${cell(a,la)}</tr><tr>${cell(b,lb)}</tr>`}
+function bestBet(g){const b=g.best_bet;
+ if(!b){if(g.state==="post")return"";const l=g.lean;if(!l)return `<div class="nobet">⛔ No bet: not enough books to judge this game yet.</div>`;
+  return `<div class="nobet">☑️ <b>Lean: ${esc(l.label)} ${fmtO(l.odds)} at ${esc(l.book)}</b> · edge ${l.edge>0?"+":""}${l.edge}% <span class="meta">(below the +2% bar for a ✅ best bet, so bet small or pass)</span></div>`}
+ return `<div class="bb"><div class="pick">✅ Best bet: ${esc(b.label)}${b.odds!=null?` ${fmtO(b.odds)} at ${esc(b.book)}`:""}</div>
+ <div class="meta">${b.edge!=null?`Edge +${b.edge}% vs fair · `:""}${b.kind==="live"?"Live signal · ":""}${b.why.map(esc).join(" · ")}</div></div>`}
+function livePanel(g){const l=g.live;if(!l)return"";
+ const line=l.live_total||l.pregame_total;const ft=(l.foul_trouble||[]);
+ return `<div class="card" style="margin:10px 0 0;border-color:var(--bad)"><div class="title" style="font-size:14px">🔴 Live · Q${l.period} ${esc(l.clock)} · ${l.points} pts after ${l.elapsed} min</div>
+ <div class="line"><span>Pace <b>${l.pace}</b> poss/48</span><span>Scoring <b>${l.speed_pct>0?"+":""}${l.speed_pct}%</b> vs total</span><span>Projected <b>${l.projected??"—"}</b></span><span>Line <b>${line??"—"}</b>${l.live_total?' <span class="meta">live</span>':' <span class="meta">pregame</span>'}</span><span class="${Math.abs(l.vs_line)>=6?'gap':''}">${l.vs_line>0?"+":""}${l.vs_line??""} vs line</span></div>
+ ${l.pace_note?`<div class="gap">⏱️ ${esc(l.pace_note)}</div>`:""}
+ ${ft.map(t=>`<div class="${t.level=="FOULED OUT"?"con":"gap"}">🚨 ${esc(t.name)}${t.star?" ⭐":""} ${esc(t.level)}: ${t.fouls} fouls</div>`).join("")}
+ <div class="ctx">Projection blends the live scoring rate with the pregame total, trusting live more as the game goes on. Live lines move fast; free data is about a minute behind the books.</div></div>`}
+function market(g){const m=g.splits?.market;if(!m)return"";const c=m.consistency;
+ const rl=Object.entries(m).filter(([k,v])=>v&&v.rlm).map(([k,v])=>`🔄 Reverse line move (${k}): ${v.rlm.public_pct}% of bets on ${v.rlm.public==="away"?g.away.short:v.rlm.public==="home"?g.home.short:v.rlm.public}, but the line moved the other way`);
+ return `<details class="coach" open><summary>💲 Market & fair price ${(m.moneyline?.value.length||m.spread?.value.length||m.total?.value.length)?'<span class="val">✅ price beats fair</span>':""}</summary>
+ <table class="mk"><tr><th>Side</th><th>Fair chance</th><th>Best price</th><th>Edge</th></tr>
+ ${mrow("Moneyline",m.moneyline,"away","home",g.away.abbr,g.home.abbr)}
+ ${mrow("Spread",m.spread,"away","home",g.away.abbr,g.home.abbr,true)}
+ ${mrow("Total "+(m.total?.line??""),m.total,"over","under","Over","Under")}</table>
+ ${c&&Math.abs(c.gap)>=4?`<div class="gap">⚖️ Spread says ${esc(g.home.short)} win ${c.home_from_spread}%, moneyline says ${c.home_from_ml}%: ${Math.abs(c.gap)} pts apart</div>`:""}
+ ${rl.map(x=>`<div class="gap">${esc(x)}</div>`).join("")}
+ <div class="meta" style="margin-top:4px">Fair chance = consensus of the books with the vig removed. Edge = best price vs fair; ✅ when ≥ +2% with 4+ books. Break-even at -110 is 52.4%.</div></details>`}
+function splits(g){const s=g.splits;if(!s)return`<div class="meta" style="margin-top:8px">No public betting data yet</div>`;
+ const fmt=x=>x>0?"+"+x:x;const gs=gaps(g);
+ return `<details class="coach" open><summary>📊 Public betting <span class="meta">${s.num_bets?s.num_bets.toLocaleString()+" bets tracked":""}</span>${gs.length?' <span class="gap">💰 money/bets gap</span>':''}</summary><div class="splits">
+ ${bar("Spread",s.spread?.away,s.spread?.home,`${g.away.abbr} ${fmt(s.spread?.away?.line)}`,`${g.home.abbr} ${fmt(s.spread?.home?.line)}`)}
+ ${bar("Moneyline",s.moneyline?.away,s.moneyline?.home,g.away.abbr,g.home.abbr)}
+ ${bar("Total "+(s.total?.over?.line??""),s.total?.over,s.total?.under,"Over","Under")}
+ ${gs.map(x=>`<div class="gap">💰 ${esc(x)}</div>`).join("")}
+ ${(g.public||[]).filter(p=>p.heavy).map(p=>`<div class="spot">👥 Public on <b>${esc(p.name)}</b> ${p.market==="moneyline"?"ML":p.market} (${p.bets}% of bets): ${esc(p.move)} ${p.verdict==="against public"?'<span class="gap">🔄 against them</span>':""}${p.fade_spot?' <span class="badge">FADE SPOT</span>':""}</div>`).join("")}
+ </div><div class="meta" style="margin-top:4px">Top bar = % of bets (number of tickets) · bottom = % of money (dollars) · Action Network consensus</div><div class="ctx">Context, not a pick: these splits come from retail books that mostly don't move lines on public money (The Logic of Sports Betting).</div></details>`}
+function chips(s){const c=[];
+ if(s.note)return `<span class="chip">${esc(s.note)}</span>`;
+ if(s.season_opener)c.push(`<span class="chip">Season opener</span>`);
+ else if(s.rest_days<=0)c.push(`<span class="chip bad">Back-to-back</span>`);
+ else c.push(`<span class="chip ${s.rest_days>=3?'good':''}">${s.rest_days} day${s.rest_days==1?'':'s'} rest</span>`);
+ if(!s.season_opener&&s.games_last_4>=2)c.push(`<span class="chip warn">3 in 4 nights</span>`);
+ if(!s.season_opener&&s.games_last_6>=3)c.push(`<span class="chip warn">4 in 6 nights</span>`);
+ if(s.travel_miles!=null)c.push(`<span class="chip ${s.travel_miles>1500?'warn':''}">${s.travel_miles?s.travel_miles.toLocaleString()+' mi from '+esc(s.travel_from):'No travel'}${s.tz_change?` · ${s.tz_change>0?'+':''}${s.tz_change} TZ`:''}</span>`);
+ if(s.blowout_loss)c.push(`<span class="chip bad">Off ${s.margin}-pt loss</span>`);
+ if(s.upset_loss)c.push(`<span class="chip bad">Lost as favorite (${esc(s.last_line)})</span>`);
+ c.push(`<span class="chip">Last: ${esc(s.last_result)} · ${esc(s.last_date)}</span>`);
+ return c.join("")}
+function team(t,side){return `<div class="team">
+ <div class="tname">${t.logo?`<img src="${esc(t.logo)}" alt="">`:""}${esc(t.name)} <span class="meta">${side}${t.record?" · "+esc(t.record):""}</span></div>
+ <div class="chips">${chips(t.situation)}</div>
+ <div class="stars">${t.stars.map(p=>`<div><span>⭐ ${esc(p.name)} <span class="meta">${p.ppg.toFixed(1)} pts · ${p.rpg.toFixed(1)} reb · ${p.apg.toFixed(1)} ast</span></span><span class="st-${esc(p.status).replace(/\s/g,'-')}" title="${esc(p.inj_note)}">${esc(p.status)}</span></div>`).join("")||'<span class="meta">No stat leaders yet</span>'}</div>${threes(t)}${def_(t.defense)}${coach(t.coach)}</div>`}
+function def_(d){if(!d)return"";return `<details class="coach"><summary>🛡️ Defense · DRtg ${d.drtg??"?"} <span class="meta">(#${d.drtg_rank??"?"} of 30)</span></summary>
+ <div class="stars">${d.matchups.map(m=>`<div><span>${esc(m.defender)} <span class="meta">${esc(m.def_pos)}</span> → ${esc(m.guarding)} <span class="meta">${esc(m.off_pos)}</span></span><span class="g-${m.grade}">${m.grade} ${m.dbpm>0?"+":""}${m.dbpm}</span></div>`).join("")}</div>
+ <div class="meta">Projected matchups · DBPM = defensive impact per 100 possessions</div></details>`}
+function gl(r){return `<div><span><b class="${r.result=="W"?"pro":"con"}">${r.result}</b> ${esc(r.score)} ${esc(r.where)} ${esc(r.opp)} ${r.playoff?`<span class="meta">${esc(r.note||"Playoff")}</span>`:""}</span><span class="meta">${esc(r.date)}</span></div>`}
+function last5(t){const l=t.situation.last5||[];if(!l.length)return"";const w=l.filter(r=>r.result=="W").length;
+ return `<details class="coach"><summary>📅 ${esc(t.short)} last 5 games: ${w}-${l.length-w} <span class="meta">${l.map(r=>r.result).join(" ")}</span></summary><div class="stars">${l.map(gl).join("")}</div></details>`}
+function h2h(g){const l=g.h2h||[];if(!l.length)return`<div class="meta" style="margin-top:6px">No recent head-to-head games</div>`;
+ const hw=l.filter(r=>r.result=="W").length;
+ return `<details class="coach"><summary>🤝 Last ${l.length} head-to-head: ${esc(g.home.short)} ${hw}-${l.length-hw} <span class="meta">(home team's view)</span></summary><div class="stars">${l.map(gl).join("")}</div></details>`}
+function threes(t){const s=t.shooters||[],d=t.defense||{};
+ const shoot=s.map(p=>`<div><span>🎯 ${esc(p.name)}</span><span class="${p.tp_pct>=38?'pro':p.tp_pct<34?'con':'meta'}">${p.tpm.toFixed(1)} made/g · ${p.tp_pct.toFixed(1)}%</span></div>`).join("")||'<div class="meta">No high-volume shooters</div>';
+ const r=d.opp3_rank;const cls=r<=10?'pro':r>=21?'con':'meta';
+ const guard=(d.perimeter||[]).map(p=>`<div><span>🔒 ${esc(p.name)} <span class="meta">${esc(p.pos)}</span></span><span class="g-${grade(p.dbpm)}">DBPM ${p.dbpm>0?"+":""}${p.dbpm}</span></div>`).join("");
+ return `<details class="coach"><summary>🏹 3-pointers · shooting & guarding</summary><div class="stars">
+ <div class="meta" style="margin-top:4px">Best shooters</div>${shoot}
+ <div class="meta" style="margin-top:6px">Guarding the 3: opponents shoot <b class="${cls}">${d.opp3_pct!=null?(d.opp3_pct*100).toFixed(1)+"%":"?"}</b> from 3 (#${r??"?"} of 30)${d.opp3a?` on ${d.opp3a} attempts/g`:""}</div>${guard}
+ </div><div class="meta">🔒 = best perimeter defenders (overall defensive impact, not 3-pt-only tracking)</div></details>`}
+function grade(x){return x>=2?"Elite":x>=0.8?"Good":x>=-0.5?"Average":"Weak"}
+function coach(c){if(!c||!c.name)return"";const li=(a,cl)=>a.map(x=>`<li class="${cl}">${esc(x)}</li>`).join("");
+ return `<details class="coach"><summary>🧠 Coach ${esc(c.name)} · <span class="rate">${c.rating??"?"}/10</span></summary>
+ ${c.accolades?.length?`<div class="meta">🏆 ${c.accolades.map(esc).join(" · ")}</div>`:""}
+ <ul>${li((c.good||[]).map(x=>"👍 "+x),"pro")}${li((c.bad||[]).map(x=>"👎 "+x),"con")}</ul></details>`}
+function books(b){if(!b)return"";return `<div class="books">${Object.entries(b).map(([k,v])=>`${esc(k)}: ${Object.entries(v).filter(([n])=>n!=="updated"&&n!=="total").map(([n,p])=>esc(n.split(" ").pop())+" "+(p>0?"+":"")+p).join(" / ")}${v.total?" · O/U "+v.total:""}`).join(" &nbsp;|&nbsp; ")}</div>`}
+function topBet(){const el=document.getElementById("topbet");const c=D.games.filter(g=>g.best_bet).sort((a,b)=>b.best_bet.score-a.best_bet.score);
+ if(!c.length){const L=D.games.filter(g=>g.lean).sort((a,b)=>b.lean.edge-a.lean.edge);el.className="card nobet";
+  el.innerHTML="⛔ <b>No ✅ best bet right now.</b> Every price is close to fair."+(L.length?`<div style="margin-top:6px">☑️ Top lean: <b>${esc(L[0].lean.label)} ${fmtO(L[0].lean.odds)} at ${esc(L[0].lean.book)}</b> · edge ${L[0].lean.edge>0?"+":""}${L[0].lean.edge}% · ${esc(L[0].away.short)} @ ${esc(L[0].home.short)}, ${esc(L[0].start_et)}</div>`:"")+`<div class="ctx">A lean is the closest-to-fair price, not a value bet. Passing beats forcing a bet.</div>`;return}
+ const g=c[0],b=g.best_bet;el.innerHTML=`<div class="pick">✅ Top bet right now: ${esc(b.label)}${b.odds!=null?` ${fmtO(b.odds)} at ${esc(b.book)}`:""}</div><div class="meta">${esc(g.away.short)} @ ${esc(g.home.short)} · ${esc(g.start_et)} · ${b.edge!=null?`edge +${b.edge}% · `:""}${b.why.map(esc).join(" · ")}${c.length>1?` · ${c.length-1} more on the board`:""}</div>
+ <div class="ctx">A pick means the price beats the market's fair value, not that it will win. Bet small; most edges are a few percent.</div>`}
+function pubVerdict(p){return p.verdict==="against public"?'<span class="gap">🔄 line moved against them</span>':p.verdict==="with public"?'<span class="meta">line moved with them</span>':'<span class="meta">no move</span>'}
+function publicBox(){const el=document.getElementById("pubbox");const rows=[];
+ D.games.filter(g=>g.state!=="post").forEach(g=>(g.public||[]).filter(p=>p.heavy).forEach(p=>rows.push({g,p})));
+ rows.sort((a,b)=>((a.p.market==="moneyline")-(b.p.market==="moneyline"))||(b.p.bets-a.p.bets));
+ const T=D.public_tracker||{};const r=T.all||{};const rec=x=>x&&x.n?`${x.w}-${x.l} (${x.pct}%, ${x.units>0?"+":""}${x.units}u)`:"no graded games yet";
+ el.innerHTML=`<div class="meta" style="margin:6px 0">Sides with 60%+ of the bets, heaviest first. 🔄 = the public is heavy on one side but the line moved the other way.</div>
+ <table class="mk"><tr><th>Public side</th><th>Bets · Money</th><th>Line since open</th><th></th></tr>
+ ${rows.slice(0,15).map(({g,p})=>`<tr><td><b>${esc(p.name)}</b> ${p.market==="moneyline"?"ML":p.market==="total"?"total":"spread"}${p.fade_spot?' <span class="badge">FADE SPOT</span>':''}<div class="meta">${esc(g.away.abbr)} @ ${esc(g.home.abbr)} · ${esc(g.start_et)}</div></td><td>${p.bets}% · ${p.money??"—"}%</td><td class="meta">${esc(p.move)}</td><td>${pubVerdict(p)}</td></tr>`).join("")||'<tr><td colspan="4" class="meta">No heavy public sides right now.</td></tr>'}</table>
+ <div style="margin-top:12px"><b>📒 Fade-the-public tracker</b> <span class="meta">bet against any side with 70%+ of bets (spreads & totals), graded at -110</span></div>
+ <div class="line"><span>All: <b>${rec(T.all)}</b></span><span>80%+: <b>${rec(T["80"])}</b></span><span>Spreads: <b>${rec(T.spread)}</b></span><span>Totals: <b>${rec(T.total)}</b></span><span class="meta">${T.pending||0} waiting on results</span></div>
+ ${(T.recent||[]).length?`<div class="stars">${T.recent.map(s=>`<div><span><b class="${s.result==="fade"?"pro":s.result==="public"?"con":"meta"}">${s.result==="fade"?"Fade won":s.result==="public"?"Public won":"Push"}</b> ${esc(s.matchup)}: public ${s.pct}% on ${esc(s.public_name)} ${s.market==="spread"?(s.line>0?"+":"")+s.line:s.line}</span><span class="meta">${esc(s.final||"")}</span></div>`).join("")}</div>`:""}
+ <div class="ctx">Tracking started ${esc(T.since||"today")}. Free sources don't keep past public %, so the record builds from here. The books say fading the public rarely works in big markets. Trust it only after a few hundred games.</div>`}
+function spots(){topBet();publicBox();const out=[];
+ D.games.filter(g=>g.live).forEach(g=>{const l=g.live;if(l.pace_note)out.push([4,`⏱️ LIVE ${esc(l.pace_note)}`,g]);(l.foul_trouble||[]).filter(t=>t.star||t.level=="FOULED OUT").forEach(t=>out.push([4,`🚨 LIVE ${esc(t.name)} ${esc(t.level)} (${t.fouls} fouls, Q${l.period})`,g]))});
+ D.games.filter(g=>g.state!=="post").forEach(g=>{const m=g.splits?.market;if(!m)return;const nm=s=>s==="away"?g.away.short:s==="home"?g.home.short:s[0].toUpperCase()+s.slice(1);
+  for(const k of ["moneyline","spread","total"]){const x=m[k];if(!x)continue;
+   x.value.forEach(s=>out.push([3,`✅ <b>${esc(nm(s))}</b> ${k} ${fmtO(x.best[s].odds)} at ${esc(x.best[s].book)}: <span class="val">+${x.best[s].edge}%</span> vs fair`,g]));
+   if(x.rlm)out.push([2,`🔄 ${k}: ${x.rlm.public_pct}% of bets on ${esc(nm(x.rlm.public))}, line moving to ${esc(nm(x.rlm.moved_toward))}`,g]);
+   if(x.reliable&&x.best_hold<2)out.push([1,`🛒 ${k}: only ${x.best_hold}% house cut if you shop the best prices`,g]);}
+  if(m.consistency&&Math.abs(m.consistency.gap)>=4)out.push([2,`⚖️ Spread and moneyline disagree by ${Math.abs(m.consistency.gap)} pts`,g]);});
+ out.sort((a,b)=>b[0]-a[0]);
+ document.getElementById("spots").innerHTML=out.length?out.slice(0,10).map(([_,txt,g])=>`<div class="spot">${txt} <span class="meta">· ${esc(g.away.abbr)} @ ${esc(g.home.abbr)}, ${esc(g.start_et)}</span></div>`).join(""):'<div class="meta">Nothing stands out yet: every price is close to fair. That\'s normal; edges are rare.</div>'}
+function render(){spots();
+ document.getElementById("sub").textContent=`Updated ${D.generated_label} · auto-refreshes (every 45 s live · 2 min game days · ~15 min on the website) · stars from ${D.stars_season} · defense from ${D.defense_season||"n/a"} · odds: ${D.odds_api?"The Odds API":"ESPN / DraftKings"} · public %: Action Network`;
+ document.getElementById("filters").innerHTML=F.map(([k,l])=>`<button class="${k===filt?'on':''}" data-k="${k}">${l}</button>`).join("");
+ const gs=D.games.filter(match);const by={};gs.forEach(g=>(by[g.date_key]??=[]).push(g));
+ document.getElementById("main").innerHTML=gs.length?Object.entries(by).map(([d,list])=>`<h2>${new Date(d+"T12:00").toLocaleDateString(undefined,{weekday:"long",month:"short",day:"numeric"})}</h2>`+list.map(g=>`
+ <div class="card ${g.prime_time?'prime':''}">
+  <div class="top"><div class="title">${esc(g.away.short)} @ ${esc(g.home.short)} ${g.prime_time?'<span class="badge">⭐ PRIME TIME</span>':''}</div>
+  <div class="meta">${g.state==="in"?`<span class="live">LIVE · ${esc(g.away.score)}-${esc(g.home.score)} · ${esc(g.status)}</span>`:g.state==="post"?`Final ${esc(g.away.score)}-${esc(g.home.score)}`:esc(g.start_et)}${g.tv.length?" · "+esc(g.tv.join(", ")):""}</div></div>
+  <div class="line"><span>Spread <b>${esc(g.spread||"—")}</b></span><span>O/U <b>${esc(g.total??"—")}</b></span><span class="meta">${esc(g.odds_source)}</span></div>
+  ${books(g.books)}
+  ${bestBet(g)}
+  ${livePanel(g)}
+  ${market(g)}
+  ${splits(g)}
+  ${h2h(g)}
+  ${last5(g.away)}
+  ${last5(g.home)}
+  <div class="teams">${team(g.away,"Away")}${team(g.home,"Home")}</div>
+  <div class="ctx" style="margin-top:6px">Rest, travel, streaks, H2H and trends are well known and usually already in the line. Treat them as context unless the price is off.</div>
+ </div>`).join("")).join(""):`<div class="empty">No games match this filter.</div>`;
+ document.querySelectorAll("#filters button").forEach(b=>b.onclick=()=>{filt=b.dataset.k;try{localStorage.setItem("nbaFilt",filt)}catch(e){}render()});
+}
+render();
+
+</script>
+<script>
+(function(){const b=document.getElementById("refresh");if(!b)return;
+ const LOCAL=/^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+ const keepOpen=()=>{try{sessionStorage.setItem("open:"+location.pathname,JSON.stringify([...document.querySelectorAll("details[open] summary")].map(s=>s.textContent.trim())));sessionStorage.setItem("y:"+location.pathname,scrollY)}catch(e){}};
+ try{const o=JSON.parse(sessionStorage.getItem("open:"+location.pathname)||"[]");document.querySelectorAll("details summary").forEach(s=>{if(o.includes(s.textContent.trim()))s.parentElement.open=true});const y=+sessionStorage.getItem("y:"+location.pathname)||0;if(y)scrollTo(0,y)}catch(e){}
+ if(!LOCAL){b.textContent="↻ Reload latest";b.title="The website updates itself about every 15 minutes"}
+ b.onclick=async()=>{keepOpen();if(!LOCAL){location.reload();return}
+  b.disabled=true;b.textContent="↻ Refreshing… (up to a minute)";
+  try{const r=await fetch("/refresh",{method:"POST"});const j=await r.json();if(j.error)alert("Some data failed to refresh: "+j.error);location.reload()}
+  catch(e){b.disabled=false;b.textContent="↻ Refresh all stats";alert("Refresh needs the board server running (serve.py).")}};
+ const live=D.games.some(g=>g.state==="in");
+ setInterval(()=>{if(!document.hidden&&!b.disabled){keepOpen();location.reload()}},LOCAL?(live?45000:120000):(live?120000:300000));
+})();
+</script></body></html>

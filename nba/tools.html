@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bet Tools</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#14171c;--mute:#69707d;--line:#e3e6eb;--good:#1d8a4b;--bad:#c2372f;--star:#c98a00}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#181b21;--ink:#eceef2;--mute:#9aa1ad;--line:#2a2f38;--good:#4cc685;--bad:#ff6b61;--star:#f2b532}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{max-width:900px;margin:auto;padding:20px 16px 40px}h1{font-size:22px;margin:0 0 4px}a{color:inherit}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:14px}
+h2{font-size:16px;margin:0 0 8px}.meta{color:var(--mute);font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+label{font-size:12px;color:var(--mute);display:block}input,select{width:100%;padding:7px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font-size:14px}
+.out{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:12px}
+.stat{background:var(--bg);border-radius:8px;padding:8px}.stat b{display:block;font-size:18px}
+.good{color:var(--good)}.bad{color:var(--bad)}
+button{border:0;background:var(--ink);color:var(--bg);border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer}
+table{width:100%;border-collapse:collapse;font-size:12.5px;font-variant-numeric:tabular-nums}th,td{text-align:left;padding:5px;border-bottom:1px solid var(--line)}th{color:var(--mute);font-weight:600}
+.x{background:none;color:var(--mute);padding:0 4px}
+.tbl{overflow-x:auto}
+</style></head><body><main>
+<a href="dashboard.html" class="meta">← NBA board</a> · <a href="../nfl/dashboard.html" class="meta">NFL board</a>
+<h1>🧮 Bet Tools</h1>
+<div class="meta">Built from the ideas in your betting books: value over winners, know your break-even, beat the closing line, size bets small.</div>
+
+<section class="card"><h2>Price & value calculator</h2>
+<div class="grid">
+ <div><label>Odds offered (American)</label><input id="odds" type="number" value="-110"></div>
+ <div><label>Your win chance %</label><input id="prob" type="number" value="55" step="0.1"></div>
+ <div><label>Bankroll $</label><input id="bank" type="number" value="1000"></div>
+ <div><label>Kelly fraction</label><select id="kf"><option value="0.25">¼ Kelly (safer)</option><option value="0.5">½ Kelly</option><option value="1">Full Kelly</option></select></div>
+</div>
+<div class="out" id="calcOut"></div>
+<div class="meta" style="margin-top:8px">Your win chance has to come from somewhere real (a model, or the fair price from several books). If you can't say why you know more than the market, assume you don't.</div>
+</section>
+
+<section class="card"><h2>Remove the vig (two sides)</h2>
+<div class="grid"><div><label>Side A odds</label><input id="va" type="number" value="-115"></div><div><label>Side B odds</label><input id="vb" type="number" value="-105"></div></div>
+<div class="out" id="vigOut"></div></section>
+
+<section class="card"><h2>Bet log & closing line value</h2>
+<div class="meta">Logs stay in this browser only. Closing line value (CLV) is the best early sign you're good: if your price keeps beating the closing price, you're finding value even before the results show it. Expect 1,000+ bets before your win rate means much.</div>
+<div class="grid" style="margin-top:10px">
+ <div><label>Date</label><input id="bd" type="date"></div>
+ <div><label>Bet (team/side)</label><input id="bt" placeholder="Knicks -4.5"></div>
+ <div><label>Book</label><input id="bb" placeholder="FanDuel"></div>
+ <div><label>Your odds</label><input id="bo" type="number" value="-110"></div>
+ <div><label>Stake $</label><input id="bs" type="number" value="20"></div>
+ <div><label>Closing odds (same line)</label><input id="bc" type="number" placeholder="later"></div>
+ <div><label>Result</label><select id="br"><option value="">Pending</option><option>Win</option><option>Loss</option><option>Push</option></select></div>
+ <div><label>Why (edge reason)</label><input id="bw" placeholder="beat fair by 3%"></div>
+</div>
+<div style="margin-top:10px"><button id="add">Add bet</button></div>
+<div class="out" id="sum"></div>
+<div class="tbl" style="margin-top:10px"><table id="log"></table></div>
+</section>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const be=o=>o<0?-o/(-o+100):100/(o+100), dec=o=>1+(o>0?o/100:100/-o);
+const am=p=>p>=0.5?Math.round(-100*p/(1-p)):Math.round(100*(1-p)/p), f=x=>(x>0?"+":"")+x;
+function stat(l,v,c=""){return `<div class="stat"><span class="meta">${l}</span><b class="${c}">${v}</b></div>`}
+function calc(){const o=+$("odds").value,p=+$("prob").value/100,B=+$("bank").value,k=+$("kf").value;if(!o||!p)return;
+ const b=dec(o)-1,ev=p*b-(1-p),kel=Math.max(0,(b*p-(1-p))/b)*k;
+ $("calcOut").innerHTML=stat("Break-even",(be(o)*100).toFixed(1)+"%")+stat("Fair odds for your chance",f(am(p)))+stat("Expected value",f((ev*100).toFixed(1))+"% per bet",ev>0?"good":"bad")+stat("Suggested stake",ev>0?"$"+(B*kel).toFixed(0)+` (${(kel*100).toFixed(1)}%)`:"$0: no edge",ev>0?"good":"bad")}
+function vig(){const a=+$("va").value,b=+$("vb").value;if(!a||!b)return;const pa=be(a),pb=be(b),fa=pa/(pa+pb);
+ $("vigOut").innerHTML=stat("House cut",((pa+pb-1)*100).toFixed(1)+"%")+stat("Fair A",(fa*100).toFixed(1)+"% ("+f(am(fa))+")")+stat("Fair B",((1-fa)*100).toFixed(1)+"% ("+f(am(1-fa))+")")}
+["odds","prob","bank","kf"].forEach(i=>$(i).oninput=calc);["va","vb"].forEach(i=>$(i).oninput=vig);calc();vig();
+let L=[];try{L=JSON.parse(localStorage.getItem("betlog")||"[]")}catch(e){}
+const save=()=>{try{localStorage.setItem("betlog",JSON.stringify(L))}catch(e){}};
+$("bd").valueAsDate=new Date();
+$("add").onclick=()=>{const o=+$("bo").value;if(!$("bt").value||!o)return alert("Add the bet and odds");
+ L.unshift({d:$("bd").value,t:$("bt").value,b:$("bb").value,o,s:+$("bs").value||0,c:$("bc").value?+$("bc").value:null,r:$("br").value,w:$("bw").value});save();draw();$("bt").value="";$("bc").value="";$("bw").value=""};
+function clv(x){return x.c==null?null:(be(x.c)-be(x.o))*100}
+function pl(x){return x.r==="Win"?x.s*(dec(x.o)-1):x.r==="Loss"?-x.s:0}
+function draw(){const done=L.filter(x=>x.r),c=L.map(clv).filter(v=>v!=null),staked=done.reduce((s,x)=>s+x.s,0),profit=done.reduce((s,x)=>s+pl(x),0),w=done.filter(x=>x.r==="Win").length,l=done.filter(x=>x.r==="Loss").length;
+ $("sum").innerHTML=stat("Record",`${w}-${l}${done.length-w-l?"-"+(done.length-w-l):""}`)+stat("Profit","$"+profit.toFixed(2),profit>=0?"good":"bad")+stat("ROI",staked?(profit/staked*100).toFixed(1)+"%":"—",profit>=0?"good":"bad")+stat("Avg CLV",c.length?f((c.reduce((a,b)=>a+b,0)/c.length).toFixed(2))+" pts":"—",c.length&&c.reduce((a,b)=>a+b,0)>0?"good":"")+stat("Beat close",c.length?Math.round(c.filter(v=>v>0).length/c.length*100)+"%":"—");
+ $("log").innerHTML=`<tr><th>Date</th><th>Bet</th><th>Book</th><th>Odds</th><th>Stake</th><th>Close</th><th>CLV</th><th>Result</th><th>P/L</th><th>Why</th><th></th></tr>`+L.map((x,i)=>{const v=clv(x);return `<tr><td>${x.d}</td><td>${esc(x.t)}</td><td>${esc(x.b)}</td><td>${f(x.o)}</td><td>$${x.s}</td><td>${x.c!=null?f(x.c):`<input data-c="${i}" style="width:70px" placeholder="add">`}</td><td class="${v>0?"good":v<0?"bad":""}">${v!=null?f(v.toFixed(1)):"—"}</td><td><select data-r="${i}"><option value="">Pending</option>${["Win","Loss","Push"].map(r=>`<option${x.r===r?" selected":""}>${r}</option>`).join("")}</select></td><td class="${pl(x)>0?"good":pl(x)<0?"bad":""}">${x.r?"$"+pl(x).toFixed(2):""}</td><td class="meta">${esc(x.w)}</td><td><button class="x" data-x="${i}">✕</button></td></tr>`}).join("");
+ document.querySelectorAll("[data-r]").forEach(s=>s.onchange=()=>{L[s.dataset.r].r=s.value;save();draw()});
+ document.querySelectorAll("[data-c]").forEach(s=>s.onchange=()=>{L[s.dataset.c].c=+s.value||null;save();draw()});
+ document.querySelectorAll("[data-x]").forEach(s=>s.onclick=()=>{if(confirm("Remove this bet?")){L.splice(s.dataset.x,1);save();draw()}})}
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+draw();
+</script></body></html>

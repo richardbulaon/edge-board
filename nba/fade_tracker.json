@@ -1,0 +1,82 @@
+{
+ "spots": {
+  "401909091-spread": {
+   "id": "401909091",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Timberwolves",
+   "pct": 71,
+   "money": 65,
+   "line": 1.5,
+   "start": "2026-10-21T23:30Z",
+   "matchup": "MIN @ MIA",
+   "date": "2026-10-21",
+   "result": null
+  },
+  "401909836-spread": {
+   "id": "401909836",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Nets",
+   "pct": 73,
+   "money": 68,
+   "line": -1.5,
+   "start": "2026-10-21T23:30Z",
+   "matchup": "CHA @ BKN",
+   "date": "2026-10-21",
+   "result": null
+  },
+  "401909092-spread": {
+   "id": "401909092",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Warriors",
+   "pct": 82,
+   "money": 79,
+   "line": 7.5,
+   "start": "2026-10-22T02:00Z",
+   "matchup": "GS @ LAL",
+   "date": "2026-10-21",
+   "result": null
+  },
+  "401909093-spread": {
+   "id": "401909093",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Cavaliers",
+   "pct": 78,
+   "money": 76,
+   "line": 3.5,
+   "start": "2026-10-22T23:00Z",
+   "matchup": "CLE @ PHI",
+   "date": "2026-10-22",
+   "result": null
+  },
+  "401909094-spread": {
+   "id": "401909094",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Nuggets",
+   "pct": 73,
+   "money": 73,
+   "line": 7.5,
+   "start": "2026-10-23T01:30Z",
+   "matchup": "DEN @ OKC",
+   "date": "2026-10-22",
+   "result": null
+  },
+  "401909094-total": {
+   "id": "401909094",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 71,
+   "money": 72,
+   "line": 236.5,
+   "start": "2026-10-23T01:30Z",
+   "matchup": "DEN @ OKC",
+   "date": "2026-10-22",
+   "result": null
+  }
+ }
+}

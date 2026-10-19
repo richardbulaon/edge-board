@@ -1,0 +1,61 @@
+name: Update boards
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"     # every 15 minutes (GitHub may run it a few minutes late)
+  workflow_dispatch:            # "Run workflow" button for a manual refresh
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update-boards
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pull fresh stats
+        run: |
+          (cd nba && python nba.py 4) || echo "NBA refresh failed"
+          (cd nfl && python nfl.py)   || echo "NFL refresh failed"
+
+      - name: Save fade-tracker results
+        run: |
+          git config user.name "edge-board-bot"
+          git config user.email "edge-board-bot@users.noreply.github.com"
+          git add nba/fade_tracker.json nfl/fade_tracker.json
+          git diff --cached --quiet || (git commit -m "Update fade tracker [skip ci]" && git push)
+
+      - name: Build site
+        run: |
+          mkdir -p site/nba site/nfl
+          cp index.html site/
+          cp nba/dashboard.html nba/data.json nba/tools.html site/nba/
+          cp nfl/dashboard.html nfl/data.json site/nfl/
+          touch site/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
