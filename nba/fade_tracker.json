@@ -32,7 +32,7 @@
    "public_side": "away",
    "public_name": "Warriors",
    "pct": 83,
-   "money": 78,
+   "money": 77,
    "line": 6.5,
    "start": "2026-10-22T02:00Z",
    "matchup": "GS @ LAL",
@@ -84,7 +84,7 @@
    "public_side": "away",
    "public_name": "76ers",
    "pct": 72,
-   "money": 75,
+   "money": 76,
    "line": 4.5,
    "start": "2026-10-20T23:00Z",
    "matchup": "PHI @ NY",
@@ -101,6 +101,19 @@
    "line": 219.5,
    "start": "2026-10-21T23:30Z",
    "matchup": "CHA @ BKN",
+   "date": "2026-10-21",
+   "result": null
+  },
+  "401909842-total": {
+   "id": "401909842",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 72,
+   "money": 72,
+   "line": 228.5,
+   "start": "2026-10-22T02:30Z",
+   "matchup": "SAC @ LAC",
    "date": "2026-10-21",
    "result": null
   }
