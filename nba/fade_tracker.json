@@ -151,7 +151,8 @@
    "start": "2026-10-23T23:00Z",
    "matchup": "NY @ BOS",
    "date": "2026-10-23",
-   "result": null
+   "result": "fade",
+   "final": "103-107"
   },
   "401909839-spread": {
    "id": "401909839",
@@ -220,7 +221,8 @@
    "start": "2026-10-23T23:00Z",
    "matchup": "MIN @ ORL",
    "date": "2026-10-23",
-   "result": null
+   "result": "public",
+   "final": "115-93"
   },
   "401909845-total": {
    "id": "401909845",
@@ -233,7 +235,8 @@
    "start": "2026-10-23T23:00Z",
    "matchup": "MIN @ ORL",
    "date": "2026-10-23",
-   "result": null
+   "result": "fade",
+   "final": "115-93"
   },
   "401909851-total": {
    "id": "401909851",
@@ -259,7 +262,8 @@
    "start": "2026-10-23T23:00Z",
    "matchup": "ATL @ CHA",
    "date": "2026-10-23",
-   "result": null
+   "result": "public",
+   "final": "128-81"
   },
   "401909843-total": {
    "id": "401909843",
@@ -272,7 +276,8 @@
    "start": "2026-10-23T23:00Z",
    "matchup": "ATL @ CHA",
    "date": "2026-10-23",
-   "result": null
+   "result": "fade",
+   "final": "128-81"
   },
   "401909844-spread": {
    "id": "401909844",
@@ -285,7 +290,8 @@
    "start": "2026-10-23T23:00Z",
    "matchup": "DAL @ IND",
    "date": "2026-10-23",
-   "result": null
+   "result": "fade",
+   "final": "121-105"
   },
   "401909844-total": {
    "id": "401909844",
@@ -298,7 +304,8 @@
    "start": "2026-10-23T23:00Z",
    "matchup": "DAL @ IND",
    "date": "2026-10-23",
-   "result": null
+   "result": "fade",
+   "final": "121-105"
   },
   "401909846-spread": {
    "id": "401909846",
@@ -311,7 +318,8 @@
    "start": "2026-10-23T23:00Z",
    "matchup": "TOR @ WSH",
    "date": "2026-10-23",
-   "result": null
+   "result": "public",
+   "final": "112-102"
   },
   "401909846-total": {
    "id": "401909846",
@@ -324,7 +332,8 @@
    "start": "2026-10-23T23:00Z",
    "matchup": "TOR @ WSH",
    "date": "2026-10-23",
-   "result": null
+   "result": "fade",
+   "final": "112-102"
   },
   "401909849-spread": {
    "id": "401909849",
@@ -337,7 +346,8 @@
    "start": "2026-10-24T01:30Z",
    "matchup": "NO @ UTAH",
    "date": "2026-10-23",
-   "result": null
+   "result": "public",
+   "final": "119-120"
   },
   "401909852-spread": {
    "id": "401909852",
@@ -363,7 +373,8 @@
    "start": "2026-10-24T00:00Z",
    "matchup": "DET @ MIA",
    "date": "2026-10-23",
-   "result": null
+   "result": "public",
+   "final": "128-111"
   },
   "401909850-total": {
    "id": "401909850",
@@ -389,7 +400,8 @@
    "start": "2026-10-24T01:30Z",
    "matchup": "HOU @ SA",
    "date": "2026-10-23",
-   "result": null
+   "result": "fade",
+   "final": "114-110"
   },
   "401909850-spread": {
    "id": "401909850",
@@ -415,7 +427,8 @@
    "start": "2026-10-23T23:00Z",
    "matchup": "NY @ BOS",
    "date": "2026-10-23",
-   "result": null
+   "result": "public",
+   "final": "103-107"
   },
   "401909849-total": {
    "id": "401909849",
@@ -428,6 +441,72 @@
    "start": "2026-10-24T01:30Z",
    "matchup": "NO @ UTAH",
    "date": "2026-10-23",
+   "result": "fade",
+   "final": "119-120"
+  },
+  "401909853-spread": {
+   "id": "401909853",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Heat",
+   "pct": 93,
+   "money": 98,
+   "line": -3.5,
+   "start": "2026-10-24T22:00Z",
+   "matchup": "MIA @ CHA",
+   "date": "2026-10-24",
+   "result": null
+  },
+  "401909854-spread": {
+   "id": "401909854",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Cavaliers",
+   "pct": 83,
+   "money": 86,
+   "line": -10.5,
+   "start": "2026-10-24T23:30Z",
+   "matchup": "BKN @ CLE",
+   "date": "2026-10-24",
+   "result": null
+  },
+  "401909855-spread": {
+   "id": "401909855",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "76ers",
+   "pct": 87,
+   "money": 79,
+   "line": -12.5,
+   "start": "2026-10-24T23:30Z",
+   "matchup": "MIL @ PHI",
+   "date": "2026-10-24",
+   "result": null
+  },
+  "401909857-spread": {
+   "id": "401909857",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Wizards",
+   "pct": 84,
+   "money": 91,
+   "line": -1.5,
+   "start": "2026-10-25T00:00Z",
+   "matchup": "WSH @ CHI",
+   "date": "2026-10-24",
+   "result": null
+  },
+  "401909859-spread": {
+   "id": "401909859",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Nuggets",
+   "pct": 79,
+   "money": 85,
+   "line": -11.5,
+   "start": "2026-10-25T01:00Z",
+   "matchup": "NO @ DEN",
+   "date": "2026-10-24",
    "result": null
   }
  }
