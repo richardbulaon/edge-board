@@ -249,7 +249,8 @@
    "start": "2026-10-24T02:00Z",
    "matchup": "LAC @ LAL",
    "date": "2026-10-23",
-   "result": null
+   "result": "public",
+   "final": "117-125"
   },
   "401909843-spread": {
    "id": "401909843",
@@ -360,7 +361,8 @@
    "start": "2026-10-24T02:00Z",
    "matchup": "POR @ SAC",
    "date": "2026-10-23",
-   "result": null
+   "result": "fade",
+   "final": "128-120"
   },
   "401909847-total": {
    "id": "401909847",
@@ -387,7 +389,8 @@
    "start": "2026-10-24T02:00Z",
    "matchup": "MEM @ GS",
    "date": "2026-10-23",
-   "result": null
+   "result": "fade",
+   "final": "111-108"
   },
   "401909096-total": {
    "id": "401909096",
@@ -414,7 +417,8 @@
    "start": "2026-10-24T02:00Z",
    "matchup": "MEM @ GS",
    "date": "2026-10-23",
-   "result": null
+   "result": "fade",
+   "final": "111-108"
   },
   "401909095-spread": {
    "id": "401909095",
@@ -449,8 +453,8 @@
    "market": "spread",
    "public_side": "away",
    "public_name": "Heat",
-   "pct": 93,
-   "money": 98,
+   "pct": 91,
+   "money": 95,
    "line": -3.5,
    "start": "2026-10-24T22:00Z",
    "matchup": "MIA @ CHA",
@@ -462,9 +466,9 @@
    "market": "spread",
    "public_side": "home",
    "public_name": "Cavaliers",
-   "pct": 83,
-   "money": 86,
-   "line": -10.5,
+   "pct": 81,
+   "money": 88,
+   "line": -11.5,
    "start": "2026-10-24T23:30Z",
    "matchup": "BKN @ CLE",
    "date": "2026-10-24",
@@ -475,8 +479,8 @@
    "market": "spread",
    "public_side": "home",
    "public_name": "76ers",
-   "pct": 87,
-   "money": 79,
+   "pct": 80,
+   "money": 84,
    "line": -12.5,
    "start": "2026-10-24T23:30Z",
    "matchup": "MIL @ PHI",
@@ -488,8 +492,8 @@
    "market": "spread",
    "public_side": "away",
    "public_name": "Wizards",
-   "pct": 84,
-   "money": 91,
+   "pct": 73,
+   "money": 79,
    "line": -1.5,
    "start": "2026-10-25T00:00Z",
    "matchup": "WSH @ CHI",
@@ -506,6 +510,19 @@
    "line": -11.5,
    "start": "2026-10-25T01:00Z",
    "matchup": "NO @ DEN",
+   "date": "2026-10-24",
+   "result": null
+  },
+  "401909856-total": {
+   "id": "401909856",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 91,
+   "money": 91,
+   "line": 229.5,
+   "start": "2026-10-25T00:30Z",
+   "matchup": "HOU @ ATL",
    "date": "2026-10-24",
    "result": null
   }
