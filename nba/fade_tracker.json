@@ -459,7 +459,8 @@
    "start": "2026-10-24T22:00Z",
    "matchup": "MIA @ CHA",
    "date": "2026-10-24",
-   "result": null
+   "result": "fade",
+   "final": "110-115"
   },
   "401909854-spread": {
    "id": "401909854",
@@ -472,7 +473,8 @@
    "start": "2026-10-24T23:30Z",
    "matchup": "BKN @ CLE",
    "date": "2026-10-24",
-   "result": null
+   "result": "fade",
+   "final": "121-125"
   },
   "401909855-spread": {
    "id": "401909855",
@@ -485,7 +487,8 @@
    "start": "2026-10-24T23:30Z",
    "matchup": "MIL @ PHI",
    "date": "2026-10-24",
-   "result": null
+   "result": "fade",
+   "final": "116-127"
   },
   "401909857-spread": {
    "id": "401909857",
@@ -498,7 +501,8 @@
    "start": "2026-10-25T00:00Z",
    "matchup": "WSH @ CHI",
    "date": "2026-10-24",
-   "result": null
+   "result": "public",
+   "final": "124-120"
   },
   "401909859-spread": {
    "id": "401909859",
@@ -511,7 +515,8 @@
    "start": "2026-10-25T01:00Z",
    "matchup": "NO @ DEN",
    "date": "2026-10-24",
-   "result": null
+   "result": "fade",
+   "final": "135-141"
   },
   "401909856-total": {
    "id": "401909856",
@@ -524,7 +529,8 @@
    "start": "2026-10-25T00:30Z",
    "matchup": "HOU @ ATL",
    "date": "2026-10-24",
-   "result": null
+   "result": "public",
+   "final": "121-114"
   },
   "401909860-total": {
    "id": "401909860",
@@ -550,7 +556,8 @@
    "start": "2026-10-24T22:00Z",
    "matchup": "MIA @ CHA",
    "date": "2026-10-24",
-   "result": null
+   "result": "fade",
+   "final": "110-115"
   },
   "401909858-total": {
    "id": "401909858",
@@ -563,7 +570,8 @@
    "start": "2026-10-25T00:00Z",
    "matchup": "SA @ DAL",
    "date": "2026-10-24",
-   "result": null
+   "result": "fade",
+   "final": "122-106"
   },
   "401909860-spread": {
    "id": "401909860",
@@ -576,6 +584,149 @@
    "start": "2026-10-25T02:00Z",
    "matchup": "GS @ PHX",
    "date": "2026-10-24",
+   "result": null
+  },
+  "401909861-spread": {
+   "id": "401909861",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Lakers",
+   "pct": 81,
+   "money": 86,
+   "line": -5.5,
+   "start": "2026-10-25T21:00Z",
+   "matchup": "LAL @ UTAH",
+   "date": "2026-10-25",
+   "result": null
+  },
+  "401909861-total": {
+   "id": "401909861",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 78,
+   "money": 76,
+   "line": 236.5,
+   "start": "2026-10-25T21:00Z",
+   "matchup": "LAL @ UTAH",
+   "date": "2026-10-25",
+   "result": null
+  },
+  "401909862-total": {
+   "id": "401909862",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 78,
+   "money": 79,
+   "line": 231.5,
+   "start": "2026-10-25T22:00Z",
+   "matchup": "IND @ BKN",
+   "date": "2026-10-25",
+   "result": null
+  },
+  "401909863-total": {
+   "id": "401909863",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 87,
+   "money": 88,
+   "line": 224.5,
+   "start": "2026-10-25T23:00Z",
+   "matchup": "ORL @ NY",
+   "date": "2026-10-25",
+   "result": null
+  },
+  "401909864-spread": {
+   "id": "401909864",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Timberwolves",
+   "pct": 80,
+   "money": 71,
+   "line": -1.5,
+   "start": "2026-10-25T23:00Z",
+   "matchup": "TOR @ MIN",
+   "date": "2026-10-25",
+   "result": null
+  },
+  "401909864-total": {
+   "id": "401909864",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 87,
+   "money": 84,
+   "line": 232.5,
+   "start": "2026-10-25T23:00Z",
+   "matchup": "TOR @ MIN",
+   "date": "2026-10-25",
+   "result": null
+  },
+  "401909865-spread": {
+   "id": "401909865",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Thunder",
+   "pct": 71,
+   "money": 84,
+   "line": -14.5,
+   "start": "2026-10-25T23:00Z",
+   "matchup": "LAC @ OKC",
+   "date": "2026-10-25",
+   "result": null
+  },
+  "401909865-total": {
+   "id": "401909865",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 92,
+   "money": 95,
+   "line": 221.5,
+   "start": "2026-10-25T23:00Z",
+   "matchup": "LAC @ OKC",
+   "date": "2026-10-25",
+   "result": null
+  },
+  "401909866-total": {
+   "id": "401909866",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 91,
+   "money": 91,
+   "line": 226.5,
+   "start": "2026-10-25T23:30Z",
+   "matchup": "DET @ PHI",
+   "date": "2026-10-25",
+   "result": null
+  },
+  "401909867-spread": {
+   "id": "401909867",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Grizzlies",
+   "pct": 75,
+   "money": 80,
+   "line": -4.5,
+   "start": "2026-10-26T01:00Z",
+   "matchup": "MEM @ SAC",
+   "date": "2026-10-25",
+   "result": null
+  },
+  "401909867-total": {
+   "id": "401909867",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 88,
+   "money": 88,
+   "line": 236.5,
+   "start": "2026-10-26T01:00Z",
+   "matchup": "MEM @ SAC",
+   "date": "2026-10-25",
    "result": null
   }
  }
