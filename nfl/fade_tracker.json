@@ -39,7 +39,8 @@
    "start": "2026-10-25T17:00Z",
    "matchup": "SF @ ATL",
    "date": "2026-10-25",
-   "result": null
+   "result": "fade",
+   "final": "20-29"
   },
   "401873013-spread": {
    "id": "401873013",
@@ -52,7 +53,8 @@
    "start": "2026-10-25T17:00Z",
    "matchup": "CLE @ TEN",
    "date": "2026-10-25",
-   "result": null
+   "result": "public",
+   "final": "27-24"
   },
   "401873013-total": {
    "id": "401873013",
@@ -65,7 +67,8 @@
    "start": "2026-10-25T17:00Z",
    "matchup": "CLE @ TEN",
    "date": "2026-10-25",
-   "result": null
+   "result": "public",
+   "final": "27-24"
   },
   "401873015-total": {
    "id": "401873015",
@@ -78,7 +81,8 @@
    "start": "2026-10-25T17:00Z",
    "matchup": "MIA @ NYJ",
    "date": "2026-10-25",
-   "result": null
+   "result": "public",
+   "final": "28-25"
   },
   "401873018-total": {
    "id": "401873018",
@@ -91,7 +95,8 @@
    "start": "2026-10-25T17:00Z",
    "matchup": "TB @ CAR",
    "date": "2026-10-25",
-   "result": null
+   "result": "public",
+   "final": "43-13"
   },
   "401873016-total": {
    "id": "401873016",
@@ -104,15 +109,16 @@
    "start": "2026-10-25T17:00Z",
    "matchup": "NYG @ HOU",
    "date": "2026-10-25",
-   "result": null
+   "result": "public",
+   "final": "27-21"
   },
   "401873022-spread": {
    "id": "401873022",
    "market": "spread",
    "public_side": "away",
    "public_name": "Chiefs",
-   "pct": 85,
-   "money": 81,
+   "pct": 84,
+   "money": 75,
    "line": 3,
    "start": "2026-10-26T00:20Z",
    "matchup": "KC @ SEA",
@@ -124,8 +130,8 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 80,
-   "money": 74,
+   "pct": 71,
+   "money": 77,
    "line": 42.5,
    "start": "2026-10-26T00:20Z",
    "matchup": "KC @ SEA",
@@ -170,7 +176,8 @@
    "start": "2026-10-25T17:00Z",
    "matchup": "CIN @ BAL",
    "date": "2026-10-25",
-   "result": null
+   "result": "public",
+   "final": "35-13"
   },
   "401873020-total": {
    "id": "401873020",
@@ -210,7 +217,8 @@
    "start": "2026-10-25T17:00Z",
    "matchup": "CIN @ BAL",
    "date": "2026-10-25",
-   "result": null
+   "result": "public",
+   "final": "35-13"
   },
   "401873014-total": {
    "id": "401873014",
@@ -223,7 +231,8 @@
    "start": "2026-10-25T17:00Z",
    "matchup": "IND @ MIN",
    "date": "2026-10-25",
-   "result": null
+   "result": "fade",
+   "final": "10-16"
   },
   "401873031-total": {
    "id": "401873031",
@@ -232,7 +241,7 @@
    "public_name": "Under",
    "pct": 82,
    "money": 87,
-   "line": 45.5,
+   "line": 46.5,
    "start": "2026-11-01T18:00Z",
    "matchup": "TEN @ CIN",
    "date": "2026-11-01",
@@ -297,7 +306,7 @@
    "public_name": "Over",
    "pct": 77,
    "money": 83,
-   "line": 38.5,
+   "line": 39.5,
    "start": "2026-11-01T18:00Z",
    "matchup": "CLE @ PIT",
    "date": "2026-11-01",
@@ -388,7 +397,7 @@
    "public_name": "Under",
    "pct": 85,
    "money": 86,
-   "line": 47.5,
+   "line": 46.5,
    "start": "2026-11-01T18:00Z",
    "matchup": "IND @ JAX",
    "date": "2026-11-01",
@@ -414,7 +423,7 @@
    "public_name": "Vikings",
    "pct": 76,
    "money": 54,
-   "line": 2.5,
+   "line": 3,
    "start": "2026-11-01T18:00Z",
    "matchup": "MIN @ DET",
    "date": "2026-11-01",
@@ -427,7 +436,7 @@
    "public_name": "Packers",
    "pct": 76,
    "money": 62,
-   "line": -3,
+   "line": -3.5,
    "start": "2026-10-30T00:15Z",
    "matchup": "CAR @ GB",
    "date": "2026-10-29",
