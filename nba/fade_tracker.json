@@ -532,7 +532,7 @@
    "public_side": "over",
    "public_name": "Over",
    "pct": 74,
-   "money": 76,
+   "money": 75,
    "line": 221.5,
    "start": "2026-10-25T02:00Z",
    "matchup": "GS @ PHX",
@@ -562,6 +562,19 @@
    "line": 230.5,
    "start": "2026-10-25T00:00Z",
    "matchup": "SA @ DAL",
+   "date": "2026-10-24",
+   "result": null
+  },
+  "401909860-spread": {
+   "id": "401909860",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Warriors",
+   "pct": 70,
+   "money": 64,
+   "line": 9.5,
+   "start": "2026-10-25T02:00Z",
+   "matchup": "GS @ PHX",
    "date": "2026-10-24",
    "result": null
   }
