@@ -958,7 +958,7 @@
    "public_side": "away",
    "public_name": "76ers",
    "pct": 83,
-   "money": 81,
+   "money": 82,
    "line": -4.5,
    "start": "2026-10-28T23:00Z",
    "matchup": "PHI @ IND",
@@ -1003,7 +1003,8 @@
    "start": "2026-10-27T23:30Z",
    "matchup": "BKN @ BOS",
    "date": "2026-10-27",
-   "result": null
+   "result": "fade",
+   "final": "124-125"
   },
   "401909877-total": {
    "id": "401909877",
@@ -1016,7 +1017,8 @@
    "start": "2026-10-27T23:30Z",
    "matchup": "BKN @ BOS",
    "date": "2026-10-27",
-   "result": null
+   "result": "public",
+   "final": "124-125"
   },
   "401909878-total": {
    "id": "401909878",
@@ -1029,7 +1031,8 @@
    "start": "2026-10-28T00:00Z",
    "matchup": "DET @ NY",
    "date": "2026-10-27",
-   "result": null
+   "result": "fade",
+   "final": "97-111"
   },
   "401909879-total": {
    "id": "401909879",
@@ -1042,7 +1045,8 @@
    "start": "2026-10-28T00:00Z",
    "matchup": "SAC @ SA",
    "date": "2026-10-27",
-   "result": null
+   "result": "public",
+   "final": "103-130"
   },
   "401909880-total": {
    "id": "401909880",
@@ -1055,7 +1059,8 @@
    "start": "2026-10-28T03:00Z",
    "matchup": "POR @ LAL",
    "date": "2026-10-27",
-   "result": null
+   "result": "public",
+   "final": "136-129"
   },
   "401909880-spread": {
    "id": "401909880",
@@ -1068,7 +1073,8 @@
    "start": "2026-10-28T03:00Z",
    "matchup": "POR @ LAL",
    "date": "2026-10-27",
-   "result": null
+   "result": "fade",
+   "final": "136-129"
   },
   "401909878-spread": {
    "id": "401909878",
@@ -1081,7 +1087,8 @@
    "start": "2026-10-28T00:00Z",
    "matchup": "DET @ NY",
    "date": "2026-10-27",
-   "result": null
+   "result": "fade",
+   "final": "97-111"
   },
   "401909882-total": {
    "id": "401909882",
@@ -1089,7 +1096,7 @@
    "public_side": "over",
    "public_name": "Over",
    "pct": 70,
-   "money": 74,
+   "money": 70,
    "line": 239.5,
    "start": "2026-10-28T23:00Z",
    "matchup": "WSH @ CLE",
@@ -1101,8 +1108,8 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 85,
-   "money": 88,
+   "pct": 86,
+   "money": 89,
    "line": 215.5,
    "start": "2026-10-28T23:00Z",
    "matchup": "CHA @ DET",
@@ -1114,8 +1121,8 @@
    "market": "spread",
    "public_side": "away",
    "public_name": "Rockets",
-   "pct": 87,
-   "money": 92,
+   "pct": 80,
+   "money": 85,
    "line": -8.5,
    "start": "2026-10-29T00:00Z",
    "matchup": "HOU @ MIL",
@@ -1127,8 +1134,8 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 81,
-   "money": 86,
+   "pct": 87,
+   "money": 89,
    "line": 227.5,
    "start": "2026-10-29T00:00Z",
    "matchup": "HOU @ MIL",
@@ -1140,7 +1147,7 @@
    "market": "spread",
    "public_side": "home",
    "public_name": "Timberwolves",
-   "pct": 85,
+   "pct": 79,
    "money": 27,
    "line": -3.5,
    "start": "2026-10-29T00:00Z",
@@ -1153,9 +1160,9 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 84,
-   "money": 65,
-   "line": 225.5,
+   "pct": 86,
+   "money": 92,
+   "line": 228.5,
    "start": "2026-10-29T00:00Z",
    "matchup": "GS @ MIN",
    "date": "2026-10-28",
@@ -1166,9 +1173,9 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 75,
-   "money": 74,
-   "line": 230.5,
+   "pct": 78,
+   "money": 77,
+   "line": 229.5,
    "start": "2026-10-29T01:30Z",
    "matchup": "OKC @ DAL",
    "date": "2026-10-28",
@@ -1179,11 +1186,115 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 83,
-   "money": 87,
-   "line": 227.5,
+   "pct": 88,
+   "money": 93,
+   "line": 228.5,
    "start": "2026-10-29T02:30Z",
    "matchup": "LAL @ LAC",
+   "date": "2026-10-28",
+   "result": null
+  },
+  "401909881-total": {
+   "id": "401909881",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 70,
+   "money": 78,
+   "line": 241.5,
+   "start": "2026-10-28T23:00Z",
+   "matchup": "MIA @ ATL",
+   "date": "2026-10-28",
+   "result": null
+  },
+  "401909883-spread": {
+   "id": "401909883",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Pistons",
+   "pct": 71,
+   "money": 78,
+   "line": -6.5,
+   "start": "2026-10-28T23:00Z",
+   "matchup": "CHA @ DET",
+   "date": "2026-10-28",
+   "result": null
+  },
+  "401909886-spread": {
+   "id": "401909886",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Knicks",
+   "pct": 81,
+   "money": 86,
+   "line": -7.5,
+   "start": "2026-10-29T00:00Z",
+   "matchup": "NY @ CHI",
+   "date": "2026-10-28",
+   "result": null
+  },
+  "401909886-total": {
+   "id": "401909886",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 72,
+   "money": 71,
+   "line": 234.5,
+   "start": "2026-10-29T00:00Z",
+   "matchup": "NY @ CHI",
+   "date": "2026-10-28",
+   "result": null
+  },
+  "401909889-total": {
+   "id": "401909889",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 71,
+   "money": 77,
+   "line": 240.5,
+   "start": "2026-10-29T00:00Z",
+   "matchup": "DEN @ NO",
+   "date": "2026-10-28",
+   "result": null
+  },
+  "401909890-spread": {
+   "id": "401909890",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Spurs",
+   "pct": 72,
+   "money": 70,
+   "line": -12.5,
+   "start": "2026-10-29T01:00Z",
+   "matchup": "SA @ UTAH",
+   "date": "2026-10-28",
+   "result": null
+  },
+  "401909890-total": {
+   "id": "401909890",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 78,
+   "money": 75,
+   "line": 234.5,
+   "start": "2026-10-29T01:00Z",
+   "matchup": "SA @ UTAH",
+   "date": "2026-10-28",
+   "result": null
+  },
+  "401909891-spread": {
+   "id": "401909891",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Thunder",
+   "pct": 74,
+   "money": 66,
+   "line": -6.5,
+   "start": "2026-10-29T01:30Z",
+   "matchup": "OKC @ DAL",
    "date": "2026-10-28",
    "result": null
   }
