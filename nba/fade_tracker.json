@@ -1607,7 +1607,8 @@
    "start": "2026-10-31T22:00Z",
    "matchup": "PHI @ CHA",
    "date": "2026-10-31",
-   "result": null
+   "result": "public",
+   "final": "109-104"
   },
   "401909898-spread": {
    "id": "401909898",
@@ -1620,7 +1621,8 @@
    "start": "2026-10-31T23:00Z",
    "matchup": "ATL @ NO",
    "date": "2026-10-31",
-   "result": null
+   "result": "fade",
+   "final": "99-121"
   },
   "401909899-spread": {
    "id": "401909899",
@@ -1725,7 +1727,8 @@
    "start": "2026-10-31T22:00Z",
    "matchup": "PHI @ CHA",
    "date": "2026-10-31",
-   "result": null
+   "result": "public",
+   "final": "109-104"
   },
   "401909900-spread": {
    "id": "401909900",
