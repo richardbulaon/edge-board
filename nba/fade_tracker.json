@@ -1761,7 +1761,8 @@
    "start": "2026-11-01T20:30Z",
    "matchup": "BOS @ ORL",
    "date": "2026-11-01",
-   "result": null
+   "result": "public",
+   "final": "108-97"
   },
   "401909903-total": {
    "id": "401909903",
@@ -1774,7 +1775,8 @@
    "start": "2026-11-01T20:30Z",
    "matchup": "BOS @ ORL",
    "date": "2026-11-01",
-   "result": null
+   "result": "fade",
+   "final": "108-97"
   },
   "401909904-spread": {
    "id": "401909904",
@@ -1808,8 +1810,8 @@
    "public_side": "home",
    "public_name": "Warriors",
    "pct": 73,
-   "money": 70,
-   "line": -2.5,
+   "money": 69,
+   "line": -1.5,
    "start": "2026-11-02T01:30Z",
    "matchup": "LAC @ GS",
    "date": "2026-11-01",
@@ -1820,8 +1822,8 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 76,
-   "money": 73,
+   "pct": 80,
+   "money": 78,
    "line": 220.5,
    "start": "2026-11-02T01:30Z",
    "matchup": "LAC @ GS",
@@ -1833,8 +1835,8 @@
    "market": "spread",
    "public_side": "home",
    "public_name": "Lakers",
-   "pct": 79,
-   "money": 75,
+   "pct": 78,
+   "money": 77,
    "line": -2.5,
    "start": "2026-11-02T02:00Z",
    "matchup": "TOR @ LAL",
@@ -1846,8 +1848,8 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 81,
-   "money": 82,
+   "pct": 86,
+   "money": 86,
    "line": 224.5,
    "start": "2026-11-02T02:00Z",
    "matchup": "TOR @ LAL",
