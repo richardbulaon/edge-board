@@ -1789,7 +1789,8 @@
    "start": "2026-11-01T22:00Z",
    "matchup": "BKN @ IND",
    "date": "2026-11-01",
-   "result": null
+   "result": "fade",
+   "final": "98-90"
   },
   "401909904-total": {
    "id": "401909904",
@@ -1802,7 +1803,8 @@
    "start": "2026-11-01T22:00Z",
    "matchup": "BKN @ IND",
    "date": "2026-11-01",
-   "result": null
+   "result": "fade",
+   "final": "98-90"
   },
   "401909905-spread": {
    "id": "401909905",
@@ -1815,7 +1817,8 @@
    "start": "2026-11-02T01:30Z",
    "matchup": "LAC @ GS",
    "date": "2026-11-01",
-   "result": null
+   "result": "public",
+   "final": "112-124"
   },
   "401909905-total": {
    "id": "401909905",
@@ -1828,7 +1831,8 @@
    "start": "2026-11-02T01:30Z",
    "matchup": "LAC @ GS",
    "date": "2026-11-01",
-   "result": null
+   "result": "public",
+   "final": "112-124"
   },
   "401909906-spread": {
    "id": "401909906",
@@ -1841,7 +1845,8 @@
    "start": "2026-11-02T02:00Z",
    "matchup": "TOR @ LAL",
    "date": "2026-11-01",
-   "result": null
+   "result": "public",
+   "final": "125-131"
   },
   "401909906-total": {
    "id": "401909906",
@@ -1854,6 +1859,228 @@
    "start": "2026-11-02T02:00Z",
    "matchup": "TOR @ LAL",
    "date": "2026-11-01",
+   "result": "public",
+   "final": "125-131"
+  },
+  "401909907-spread": {
+   "id": "401909907",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Cavaliers",
+   "pct": 98,
+   "money": 96,
+   "line": -4.5,
+   "start": "2026-11-03T00:00Z",
+   "matchup": "OKC @ CLE",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909907-total": {
+   "id": "401909907",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 83,
+   "money": 85,
+   "line": 228.5,
+   "start": "2026-11-03T00:00Z",
+   "matchup": "OKC @ CLE",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909908-spread": {
+   "id": "401909908",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Pistons",
+   "pct": 99,
+   "money": 100,
+   "line": -3.5,
+   "start": "2026-11-03T00:30Z",
+   "matchup": "DET @ CHA",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909908-total": {
+   "id": "401909908",
+   "market": "total",
+   "public_side": "under",
+   "public_name": "Under",
+   "pct": 92,
+   "money": 92,
+   "line": 210.5,
+   "start": "2026-11-03T00:30Z",
+   "matchup": "DET @ CHA",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909909-spread": {
+   "id": "401909909",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Hawks",
+   "pct": 84,
+   "money": 86,
+   "line": -4.5,
+   "start": "2026-11-03T00:30Z",
+   "matchup": "ATL @ IND",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909909-total": {
+   "id": "401909909",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 80,
+   "money": 80,
+   "line": 232.5,
+   "start": "2026-11-03T00:30Z",
+   "matchup": "ATL @ IND",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909910-total": {
+   "id": "401909910",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 80,
+   "money": 76,
+   "line": 221.5,
+   "start": "2026-11-03T00:30Z",
+   "matchup": "BKN @ NY",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909911-total": {
+   "id": "401909911",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 83,
+   "money": 81,
+   "line": 224.5,
+   "start": "2026-11-03T00:30Z",
+   "matchup": "WSH @ ORL",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909912-spread": {
+   "id": "401909912",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "76ers",
+   "pct": 77,
+   "money": 78,
+   "line": -11.5,
+   "start": "2026-11-03T00:30Z",
+   "matchup": "CHI @ PHI",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909912-total": {
+   "id": "401909912",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 73,
+   "money": 70,
+   "line": 239.5,
+   "start": "2026-11-03T00:30Z",
+   "matchup": "CHI @ PHI",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909913-spread": {
+   "id": "401909913",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Mavericks",
+   "pct": 86,
+   "money": 87,
+   "line": -9.5,
+   "start": "2026-11-03T01:00Z",
+   "matchup": "SAC @ DAL",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909913-total": {
+   "id": "401909913",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 70,
+   "money": 78,
+   "line": 234.5,
+   "start": "2026-11-03T01:00Z",
+   "matchup": "SAC @ DAL",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909914-spread": {
+   "id": "401909914",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Grizzlies",
+   "pct": 78,
+   "money": 82,
+   "line": -5.5,
+   "start": "2026-11-03T01:00Z",
+   "matchup": "NO @ MEM",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909916-total": {
+   "id": "401909916",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 96,
+   "money": 96,
+   "line": 219.5,
+   "start": "2026-11-03T01:30Z",
+   "matchup": "BOS @ HOU",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909917-total": {
+   "id": "401909917",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 70,
+   "money": 75,
+   "line": 231.5,
+   "start": "2026-11-03T01:30Z",
+   "matchup": "UTAH @ SA",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909918-total": {
+   "id": "401909918",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 82,
+   "money": 81,
+   "line": 229.5,
+   "start": "2026-11-03T02:00Z",
+   "matchup": "POR @ DEN",
+   "date": "2026-11-02",
+   "result": null
+  },
+  "401909919-total": {
+   "id": "401909919",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 81,
+   "money": 73,
+   "line": 227.5,
+   "start": "2026-11-03T03:00Z",
+   "matchup": "PHX @ GS",
+   "date": "2026-11-02",
    "result": null
   }
  }

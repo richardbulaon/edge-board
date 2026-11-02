@@ -291,7 +291,8 @@
    "start": "2026-11-01T21:25Z",
    "matchup": "KC @ DEN",
    "date": "2026-11-01",
-   "result": null
+   "result": "public",
+   "final": "24-28"
   },
   "401873035-total": {
    "id": "401873035",
@@ -304,7 +305,8 @@
    "start": "2026-11-02T01:20Z",
    "matchup": "PHI @ WSH",
    "date": "2026-11-01",
-   "result": null
+   "result": "fade",
+   "final": "10-27"
   },
   "401873027-total": {
    "id": "401873027",
@@ -331,7 +333,8 @@
    "start": "2026-11-01T21:05Z",
    "matchup": "LAC @ LAR",
    "date": "2026-11-01",
-   "result": null
+   "result": "fade",
+   "final": "9-24"
   },
   "401873034-total": {
    "id": "401873034",
@@ -344,7 +347,8 @@
    "start": "2026-11-01T21:25Z",
    "matchup": "NE @ MIA",
    "date": "2026-11-01",
-   "result": null
+   "result": "fade",
+   "final": "24-19"
   },
   "401873023-total": {
    "id": "401873023",
@@ -468,7 +472,8 @@
    "start": "2026-11-01T21:25Z",
    "matchup": "NE @ MIA",
    "date": "2026-11-01",
-   "result": null
+   "result": "fade",
+   "final": "24-19"
   },
   "401873029-spread": {
    "id": "401873029",
@@ -509,7 +514,8 @@
    "start": "2026-11-01T21:05Z",
    "matchup": "LAC @ LAR",
    "date": "2026-11-01",
-   "result": null
+   "result": "public",
+   "final": "9-24"
   },
   "401873038-spread": {
    "id": "401873038",
@@ -517,7 +523,7 @@
    "public_side": "home",
    "public_name": "Falcons",
    "pct": 75,
-   "money": 72,
+   "money": 74,
    "line": 3.5,
    "start": "2026-11-08T14:30Z",
    "matchup": "CIN @ ATL",
@@ -531,7 +537,7 @@
    "public_name": "Under",
    "pct": 90,
    "money": 93,
-   "line": 49.5,
+   "line": 51.5,
    "start": "2026-11-08T14:30Z",
    "matchup": "CIN @ ATL",
    "date": "2026-11-08",
@@ -556,8 +562,8 @@
    "public_side": "over",
    "public_name": "Over",
    "pct": 72,
-   "money": 82,
-   "line": 42.5,
+   "money": 78,
+   "line": 41.5,
    "start": "2026-11-08T21:05Z",
    "matchup": "HOU @ LAC",
    "date": "2026-11-08",
@@ -594,9 +600,9 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 71,
-   "money": 82,
-   "line": 42.5,
+   "pct": 70,
+   "money": 79,
+   "line": 43.5,
    "start": "2026-11-08T18:00Z",
    "matchup": "CLE @ NO",
    "date": "2026-11-08",
