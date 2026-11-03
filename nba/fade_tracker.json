@@ -1873,7 +1873,8 @@
    "start": "2026-11-03T00:00Z",
    "matchup": "OKC @ CLE",
    "date": "2026-11-02",
-   "result": null
+   "result": "fade",
+   "final": "117-112"
   },
   "401909907-total": {
    "id": "401909907",
@@ -1886,7 +1887,8 @@
    "start": "2026-11-03T00:00Z",
    "matchup": "OKC @ CLE",
    "date": "2026-11-02",
-   "result": null
+   "result": "fade",
+   "final": "117-112"
   },
   "401909908-spread": {
    "id": "401909908",
@@ -1899,7 +1901,8 @@
    "start": "2026-11-03T00:30Z",
    "matchup": "DET @ CHA",
    "date": "2026-11-02",
-   "result": null
+   "result": "public",
+   "final": "124-91"
   },
   "401909908-total": {
    "id": "401909908",
@@ -1912,7 +1915,8 @@
    "start": "2026-11-03T00:30Z",
    "matchup": "DET @ CHA",
    "date": "2026-11-02",
-   "result": null
+   "result": "fade",
+   "final": "124-91"
   },
   "401909909-spread": {
    "id": "401909909",
@@ -1925,7 +1929,8 @@
    "start": "2026-11-03T00:30Z",
    "matchup": "ATL @ IND",
    "date": "2026-11-02",
-   "result": null
+   "result": "fade",
+   "final": "108-104"
   },
   "401909909-total": {
    "id": "401909909",
@@ -1938,7 +1943,8 @@
    "start": "2026-11-03T00:30Z",
    "matchup": "ATL @ IND",
    "date": "2026-11-02",
-   "result": null
+   "result": "fade",
+   "final": "108-104"
   },
   "401909910-total": {
    "id": "401909910",
@@ -1951,7 +1957,8 @@
    "start": "2026-11-03T00:30Z",
    "matchup": "BKN @ NY",
    "date": "2026-11-02",
-   "result": null
+   "result": "fade",
+   "final": "90-103"
   },
   "401909911-total": {
    "id": "401909911",
@@ -1964,7 +1971,8 @@
    "start": "2026-11-03T00:30Z",
    "matchup": "WSH @ ORL",
    "date": "2026-11-02",
-   "result": null
+   "result": "fade",
+   "final": "103-94"
   },
   "401909912-spread": {
    "id": "401909912",
@@ -1977,7 +1985,8 @@
    "start": "2026-11-03T00:30Z",
    "matchup": "CHI @ PHI",
    "date": "2026-11-02",
-   "result": null
+   "result": "public",
+   "final": "107-126"
   },
   "401909912-total": {
    "id": "401909912",
@@ -1990,7 +1999,8 @@
    "start": "2026-11-03T00:30Z",
    "matchup": "CHI @ PHI",
    "date": "2026-11-02",
-   "result": null
+   "result": "fade",
+   "final": "107-126"
   },
   "401909913-spread": {
    "id": "401909913",
