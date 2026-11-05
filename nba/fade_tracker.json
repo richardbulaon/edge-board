@@ -2518,6 +2518,19 @@
    "matchup": "MIA @ GS",
    "date": "2026-11-05",
    "result": null
+  },
+  "401909936-spread": {
+   "id": "401909936",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Suns",
+   "pct": 71,
+   "money": 71,
+   "line": -1.5,
+   "start": "2026-11-06T02:00Z",
+   "matchup": "ORL @ PHX",
+   "date": "2026-11-05",
+   "result": null
   }
  }
 }
