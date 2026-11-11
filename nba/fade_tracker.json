@@ -3315,7 +3315,8 @@
    "start": "2026-11-11T01:00Z",
    "matchup": "BOS @ PHI",
    "date": "2026-11-10",
-   "result": null
+   "result": "public",
+   "final": "123-101"
   },
   "401909960-spread": {
    "id": "401909960",
@@ -3328,7 +3329,8 @@
    "start": "2026-11-11T00:30Z",
    "matchup": "MIL @ NY",
    "date": "2026-11-10",
-   "result": null
+   "result": "public",
+   "final": "85-117"
   },
   "401909960-total": {
    "id": "401909960",
@@ -3341,7 +3343,8 @@
    "start": "2026-11-11T00:30Z",
    "matchup": "MIL @ NY",
    "date": "2026-11-10",
-   "result": null
+   "result": "fade",
+   "final": "85-117"
   },
   "401909962-spread": {
    "id": "401909962",
@@ -3354,7 +3357,8 @@
    "start": "2026-11-11T02:00Z",
    "matchup": "LAC @ PHX",
    "date": "2026-11-10",
-   "result": null
+   "result": "public",
+   "final": "110-133"
   },
   "401909962-total": {
    "id": "401909962",
@@ -3367,7 +3371,8 @@
    "start": "2026-11-11T02:00Z",
    "matchup": "LAC @ PHX",
    "date": "2026-11-10",
-   "result": null
+   "result": "public",
+   "final": "110-133"
   },
   "401909964-total": {
    "id": "401909964",
@@ -3380,7 +3385,8 @@
    "start": "2026-11-11T03:00Z",
    "matchup": "ORL @ SAC",
    "date": "2026-11-10",
-   "result": null
+   "result": "fade",
+   "final": "107-100"
   },
   "401909963-total": {
    "id": "401909963",
@@ -3393,7 +3399,8 @@
    "start": "2026-11-11T02:00Z",
    "matchup": "MIA @ UTAH",
    "date": "2026-11-10",
-   "result": null
+   "result": "fade",
+   "final": "115-109"
   },
   "401909963-spread": {
    "id": "401909963",
@@ -3406,7 +3413,8 @@
    "start": "2026-11-11T02:00Z",
    "matchup": "MIA @ UTAH",
    "date": "2026-11-10",
-   "result": null
+   "result": "fade",
+   "final": "115-109"
   },
   "401909965-spread": {
    "id": "401909965",
@@ -3419,7 +3427,8 @@
    "start": "2026-11-11T04:00Z",
    "matchup": "OKC @ POR",
    "date": "2026-11-10",
-   "result": null
+   "result": "fade",
+   "final": "103-123"
   },
   "401909965-total": {
    "id": "401909965",
@@ -3432,7 +3441,8 @@
    "start": "2026-11-11T04:00Z",
    "matchup": "OKC @ POR",
    "date": "2026-11-10",
-   "result": null
+   "result": "public",
+   "final": "103-123"
   },
   "401909966-total": {
    "id": "401909966",
@@ -3452,9 +3462,9 @@
    "market": "spread",
    "public_side": "away",
    "public_name": "Spurs",
-   "pct": 78,
-   "money": 86,
-   "line": -14.5,
+   "pct": 81,
+   "money": 81,
+   "line": -15.5,
    "start": "2026-11-12T01:00Z",
    "matchup": "SA @ CHI",
    "date": "2026-11-11",
@@ -3465,8 +3475,8 @@
    "market": "spread",
    "public_side": "away",
    "public_name": "Nuggets",
-   "pct": 71,
-   "money": 67,
+   "pct": 75,
+   "money": 81,
    "line": -4.5,
    "start": "2026-11-12T01:00Z",
    "matchup": "DEN @ MEM",
@@ -3478,9 +3488,9 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 87,
-   "money": 46,
-   "line": 223.5,
+   "pct": 86,
+   "money": 76,
+   "line": 222.5,
    "start": "2026-11-12T02:30Z",
    "matchup": "GS @ HOU",
    "date": "2026-11-11",
@@ -3491,9 +3501,9 @@
    "market": "spread",
    "public_side": "away",
    "public_name": "Thunder",
-   "pct": 94,
-   "money": 92,
-   "line": -2.5,
+   "pct": 79,
+   "money": 74,
+   "line": -1.5,
    "start": "2026-11-12T03:00Z",
    "matchup": "OKC @ POR",
    "date": "2026-11-11",
@@ -3504,11 +3514,115 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 82,
-   "money": 72,
-   "line": 225.5,
+   "pct": 83,
+   "money": 82,
+   "line": 226.5,
    "start": "2026-11-12T03:00Z",
    "matchup": "OKC @ POR",
+   "date": "2026-11-11",
+   "result": null
+  },
+  "401909967-spread": {
+   "id": "401909967",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Knicks",
+   "pct": 87,
+   "money": 90,
+   "line": -4.5,
+   "start": "2026-11-12T00:00Z",
+   "matchup": "CLE @ NY",
+   "date": "2026-11-11",
+   "result": null
+  },
+  "401909967-total": {
+   "id": "401909967",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 76,
+   "money": 83,
+   "line": 221.5,
+   "start": "2026-11-12T00:00Z",
+   "matchup": "CLE @ NY",
+   "date": "2026-11-11",
+   "result": null
+  },
+  "401909968-spread": {
+   "id": "401909968",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Celtics",
+   "pct": 86,
+   "money": 91,
+   "line": -7.5,
+   "start": "2026-11-12T00:00Z",
+   "matchup": "BOS @ TOR",
+   "date": "2026-11-11",
+   "result": null
+  },
+  "401909968-total": {
+   "id": "401909968",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 84,
+   "money": 77,
+   "line": 216.5,
+   "start": "2026-11-12T00:00Z",
+   "matchup": "BOS @ TOR",
+   "date": "2026-11-11",
+   "result": null
+  },
+  "401909970-total": {
+   "id": "401909970",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 72,
+   "money": 88,
+   "line": 229.5,
+   "start": "2026-11-12T01:00Z",
+   "matchup": "DEN @ MEM",
+   "date": "2026-11-11",
+   "result": null
+  },
+  "401909971-spread": {
+   "id": "401909971",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Lakers",
+   "pct": 92,
+   "money": 93,
+   "line": -12.5,
+   "start": "2026-11-12T01:00Z",
+   "matchup": "LAL @ MIL",
+   "date": "2026-11-11",
+   "result": null
+  },
+  "401909973-spread": {
+   "id": "401909973",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Magic",
+   "pct": 79,
+   "money": 83,
+   "line": -4.5,
+   "start": "2026-11-12T02:00Z",
+   "matchup": "ORL @ UTAH",
+   "date": "2026-11-11",
+   "result": null
+  },
+  "401909973-total": {
+   "id": "401909973",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 77,
+   "money": 81,
+   "line": 217.5,
+   "start": "2026-11-12T02:00Z",
+   "matchup": "ORL @ UTAH",
    "date": "2026-11-11",
    "result": null
   }
