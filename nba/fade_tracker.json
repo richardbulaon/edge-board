@@ -3665,7 +3665,8 @@
    "start": "2026-11-13T00:00Z",
    "matchup": "DET @ WSH",
    "date": "2026-11-12",
-   "result": null
+   "result": "fade",
+   "final": "144-140"
   },
   "401909979-spread": {
    "id": "401909979",
@@ -3678,7 +3679,8 @@
    "start": "2026-11-13T02:00Z",
    "matchup": "CHA @ PHX",
    "date": "2026-11-12",
-   "result": null
+   "result": "fade",
+   "final": "96-101"
   },
   "401909979-total": {
    "id": "401909979",
@@ -3691,7 +3693,8 @@
    "start": "2026-11-13T02:00Z",
    "matchup": "CHA @ PHX",
    "date": "2026-11-12",
-   "result": null
+   "result": "fade",
+   "final": "96-101"
   },
   "401909976-total": {
    "id": "401909976",
@@ -3704,7 +3707,8 @@
    "start": "2026-11-13T00:00Z",
    "matchup": "TOR @ PHI",
    "date": "2026-11-12",
-   "result": null
+   "result": "public",
+   "final": "112-123"
   },
   "401909977-total": {
    "id": "401909977",
@@ -3717,7 +3721,8 @@
    "start": "2026-11-13T00:00Z",
    "matchup": "DET @ WSH",
    "date": "2026-11-12",
-   "result": null
+   "result": "public",
+   "final": "144-140"
   },
   "401909978-total": {
    "id": "401909978",
@@ -3730,15 +3735,16 @@
    "start": "2026-11-13T01:00Z",
    "matchup": "DAL @ MIN",
    "date": "2026-11-12",
-   "result": null
+   "result": "public",
+   "final": "94-133"
   },
   "401909296-spread": {
    "id": "401909296",
    "market": "spread",
    "public_side": "away",
    "public_name": "Knicks",
-   "pct": 81,
-   "money": 86,
+   "pct": 77,
+   "money": 54,
    "line": -6.5,
    "start": "2026-11-14T00:00Z",
    "matchup": "NY @ IND",
@@ -3750,8 +3756,8 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 73,
-   "money": 38,
+   "pct": 83,
+   "money": 69,
    "line": 219.5,
    "start": "2026-11-14T00:00Z",
    "matchup": "NY @ IND",
@@ -3776,8 +3782,8 @@
    "market": "spread",
    "public_side": "away",
    "public_name": "Grizzlies",
-   "pct": 70,
-   "money": 52,
+   "pct": 79,
+   "money": 72,
    "line": -3.5,
    "start": "2026-11-14T01:00Z",
    "matchup": "MEM @ NO",
@@ -3789,9 +3795,9 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 78,
-   "money": 74,
-   "line": 218.5,
+   "pct": 86,
+   "money": 85,
+   "line": 219.5,
    "start": "2026-11-14T01:30Z",
    "matchup": "UTAH @ HOU",
    "date": "2026-11-13",
@@ -3802,11 +3808,89 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 89,
-   "money": 99,
-   "line": 218.5,
+   "pct": 91,
+   "money": 97,
+   "line": 219.5,
    "start": "2026-11-14T02:30Z",
    "matchup": "GS @ SA",
+   "date": "2026-11-13",
+   "result": null
+  },
+  "401909297-total": {
+   "id": "401909297",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 72,
+   "money": 71,
+   "line": 224.5,
+   "start": "2026-11-14T00:00Z",
+   "matchup": "MIL @ ORL",
+   "date": "2026-11-13",
+   "result": null
+  },
+  "401909298-total": {
+   "id": "401909298",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 70,
+   "money": 72,
+   "line": 235.5,
+   "start": "2026-11-14T01:00Z",
+   "matchup": "CLE @ MIA",
+   "date": "2026-11-13",
+   "result": null
+  },
+  "401909299-spread": {
+   "id": "401909299",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Hawks",
+   "pct": 73,
+   "money": 66,
+   "line": -7.5,
+   "start": "2026-11-14T01:00Z",
+   "matchup": "ATL @ CHI",
+   "date": "2026-11-13",
+   "result": null
+  },
+  "401909303-spread": {
+   "id": "401909303",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Trail Blazers",
+   "pct": 82,
+   "money": 85,
+   "line": -10.5,
+   "start": "2026-11-14T03:00Z",
+   "matchup": "POR @ SAC",
+   "date": "2026-11-13",
+   "result": null
+  },
+  "401909304-spread": {
+   "id": "401909304",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Thunder",
+   "pct": 86,
+   "money": 87,
+   "line": -7.5,
+   "start": "2026-11-14T03:30Z",
+   "matchup": "OKC @ LAC",
+   "date": "2026-11-13",
+   "result": null
+  },
+  "401909304-total": {
+   "id": "401909304",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 84,
+   "money": 89,
+   "line": 222.5,
+   "start": "2026-11-14T03:30Z",
+   "matchup": "OKC @ LAC",
    "date": "2026-11-13",
    "result": null
   }
