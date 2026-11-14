@@ -3749,7 +3749,8 @@
    "start": "2026-11-14T00:00Z",
    "matchup": "NY @ IND",
    "date": "2026-11-13",
-   "result": null
+   "result": "fade",
+   "final": "104-106"
   },
   "401909296-total": {
    "id": "401909296",
@@ -3762,7 +3763,8 @@
    "start": "2026-11-14T00:00Z",
    "matchup": "NY @ IND",
    "date": "2026-11-13",
-   "result": null
+   "result": "fade",
+   "final": "104-106"
   },
   "401909298-spread": {
    "id": "401909298",
@@ -3775,7 +3777,8 @@
    "start": "2026-11-14T01:00Z",
    "matchup": "CLE @ MIA",
    "date": "2026-11-13",
-   "result": null
+   "result": "fade",
+   "final": "121-133"
   },
   "401909300-spread": {
    "id": "401909300",
@@ -3788,7 +3791,8 @@
    "start": "2026-11-14T01:00Z",
    "matchup": "MEM @ NO",
    "date": "2026-11-13",
-   "result": null
+   "result": "public",
+   "final": "142-111"
   },
   "401909301-total": {
    "id": "401909301",
@@ -3801,7 +3805,8 @@
    "start": "2026-11-14T01:30Z",
    "matchup": "UTAH @ HOU",
    "date": "2026-11-13",
-   "result": null
+   "result": "public",
+   "final": "118-125"
   },
   "401909302-total": {
    "id": "401909302",
@@ -3814,7 +3819,8 @@
    "start": "2026-11-14T02:30Z",
    "matchup": "GS @ SA",
    "date": "2026-11-13",
-   "result": null
+   "result": "fade",
+   "final": "85-123"
   },
   "401909297-total": {
    "id": "401909297",
@@ -3827,7 +3833,8 @@
    "start": "2026-11-14T00:00Z",
    "matchup": "MIL @ ORL",
    "date": "2026-11-13",
-   "result": null
+   "result": "fade",
+   "final": "99-107"
   },
   "401909298-total": {
    "id": "401909298",
@@ -3840,7 +3847,8 @@
    "start": "2026-11-14T01:00Z",
    "matchup": "CLE @ MIA",
    "date": "2026-11-13",
-   "result": null
+   "result": "public",
+   "final": "121-133"
   },
   "401909299-spread": {
    "id": "401909299",
@@ -3853,7 +3861,8 @@
    "start": "2026-11-14T01:00Z",
    "matchup": "ATL @ CHI",
    "date": "2026-11-13",
-   "result": null
+   "result": "fade",
+   "final": "117-125"
   },
   "401909303-spread": {
    "id": "401909303",
@@ -3866,7 +3875,8 @@
    "start": "2026-11-14T03:00Z",
    "matchup": "POR @ SAC",
    "date": "2026-11-13",
-   "result": null
+   "result": "public",
+   "final": "120-107"
   },
   "401909304-spread": {
    "id": "401909304",
@@ -3879,7 +3889,8 @@
    "start": "2026-11-14T03:30Z",
    "matchup": "OKC @ LAC",
    "date": "2026-11-13",
-   "result": null
+   "result": "fade",
+   "final": "112-113"
   },
   "401909304-total": {
    "id": "401909304",
@@ -3892,7 +3903,8 @@
    "start": "2026-11-14T03:30Z",
    "matchup": "OKC @ LAC",
    "date": "2026-11-13",
-   "result": null
+   "result": "public",
+   "final": "112-113"
   },
   "401909302-spread": {
    "id": "401909302",
@@ -3905,7 +3917,8 @@
    "start": "2026-11-14T02:30Z",
    "matchup": "GS @ SA",
    "date": "2026-11-13",
-   "result": null
+   "result": "public",
+   "final": "85-123"
   },
   "401909303-total": {
    "id": "401909303",
@@ -3918,6 +3931,59 @@
    "start": "2026-11-14T03:00Z",
    "matchup": "POR @ SAC",
    "date": "2026-11-13",
+   "result": "fade",
+   "final": "120-107"
+  },
+  "401909980-spread": {
+   "id": "401909980",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Nuggets",
+   "pct": 73,
+   "money": 81,
+   "line": -11.5,
+   "start": "2026-11-15T00:00Z",
+   "matchup": "DEN @ NO",
+   "date": "2026-11-14",
+   "result": null
+  },
+  "401909982-total": {
+   "id": "401909982",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 77,
+   "money": 82,
+   "line": 229.5,
+   "start": "2026-11-15T01:00Z",
+   "matchup": "DET @ MIA",
+   "date": "2026-11-14",
+   "result": null
+  },
+  "401909983-spread": {
+   "id": "401909983",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Grizzlies",
+   "pct": 77,
+   "money": 80,
+   "line": -5.5,
+   "start": "2026-11-15T01:00Z",
+   "matchup": "BKN @ MEM",
+   "date": "2026-11-14",
+   "result": null
+  },
+  "401909983-total": {
+   "id": "401909983",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 78,
+   "money": 78,
+   "line": 225.5,
+   "start": "2026-11-15T01:00Z",
+   "matchup": "BKN @ MEM",
+   "date": "2026-11-14",
    "result": null
   }
  }
