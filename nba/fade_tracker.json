@@ -4029,7 +4029,8 @@
    "start": "2026-11-15T18:00Z",
    "matchup": "IND @ PHI",
    "date": "2026-11-15",
-   "result": null
+   "result": "fade",
+   "final": "124-131"
   },
   "401909985-total": {
    "id": "401909985",
@@ -4042,7 +4043,8 @@
    "start": "2026-11-15T18:00Z",
    "matchup": "IND @ PHI",
    "date": "2026-11-15",
-   "result": null
+   "result": "public",
+   "final": "124-131"
   },
   "401909986-spread": {
    "id": "401909986",
@@ -4127,9 +4129,9 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 86,
-   "money": 88,
-   "line": 223.5,
+   "pct": 85,
+   "money": 85,
+   "line": 224.5,
    "start": "2026-11-16T00:00Z",
    "matchup": "HOU @ WSH",
    "date": "2026-11-15",
@@ -4141,8 +4143,8 @@
    "public_side": "away",
    "public_name": "Thunder",
    "pct": 70,
-   "money": 58,
-   "line": -10.5,
+   "money": 66,
+   "line": -11.5,
    "start": "2026-11-16T02:00Z",
    "matchup": "OKC @ SAC",
    "date": "2026-11-15",
@@ -4153,8 +4155,8 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 85,
-   "money": 83,
+   "pct": 82,
+   "money": 82,
    "line": 223.5,
    "start": "2026-11-16T02:00Z",
    "matchup": "OKC @ SAC",
