@@ -916,7 +916,7 @@
    "public_side": "over",
    "public_name": "Over",
    "pct": 71,
-   "money": 68,
+   "money": 69,
    "line": 39,
    "start": "2026-11-17T01:15Z",
    "matchup": "LAC @ BAL",
@@ -976,7 +976,8 @@
    "start": "2026-11-15T21:05Z",
    "matchup": "LAR @ ARI",
    "date": "2026-11-15",
-   "result": null
+   "result": "public",
+   "final": "34-6"
   },
   "401873050-spread": {
    "id": "401873050",
@@ -1087,7 +1088,8 @@
    "start": "2026-11-15T21:05Z",
    "matchup": "SEA @ LV",
    "date": "2026-11-15",
-   "result": null
+   "result": "public",
+   "final": "21-13"
   },
   "401873063-spread": {
    "id": "401873063",
@@ -1100,7 +1102,8 @@
    "start": "2026-11-15T21:25Z",
    "matchup": "SF @ DAL",
    "date": "2026-11-15",
-   "result": null
+   "result": "public",
+   "final": "46-40"
   },
   "401873064-total": {
    "id": "401873064",
@@ -1113,7 +1116,8 @@
    "start": "2026-11-16T01:20Z",
    "matchup": "PIT @ CIN",
    "date": "2026-11-15",
-   "result": null
+   "result": "public",
+   "final": "18-38"
   },
   "401873062-total": {
    "id": "401873062",
@@ -1126,7 +1130,8 @@
    "start": "2026-11-15T21:05Z",
    "matchup": "SEA @ LV",
    "date": "2026-11-15",
-   "result": null
+   "result": "fade",
+   "final": "21-13"
   },
   "401873055-spread": {
    "id": "401873055",
@@ -1161,9 +1166,9 @@
    "market": "spread",
    "public_side": "away",
    "public_name": "Vikings",
-   "pct": 86,
-   "money": 41,
-   "line": 3.5,
+   "pct": 85,
+   "money": 42,
+   "line": 3,
    "start": "2026-11-23T01:20Z",
    "matchup": "MIN @ SF",
    "date": "2026-11-22",
@@ -1176,7 +1181,7 @@
    "public_name": "Under",
    "pct": 89,
    "money": 90,
-   "line": 46.5,
+   "line": 45.5,
    "start": "2026-11-23T01:20Z",
    "matchup": "MIN @ SF",
    "date": "2026-11-22",
@@ -1193,15 +1198,16 @@
    "start": "2026-11-15T21:25Z",
    "matchup": "SF @ DAL",
    "date": "2026-11-15",
-   "result": null
+   "result": "public",
+   "final": "46-40"
   },
   "401873070-spread": {
    "id": "401873070",
    "market": "spread",
    "public_side": "home",
    "public_name": "Bills",
-   "pct": 85,
-   "money": 56,
+   "pct": 72,
+   "money": 47,
    "line": -16.5,
    "start": "2026-11-22T18:00Z",
    "matchup": "MIA @ BUF",
@@ -1213,9 +1219,9 @@
    "market": "spread",
    "public_side": "home",
    "public_name": "Bears",
-   "pct": 95,
-   "money": 94,
-   "line": -9.5,
+   "pct": 91,
+   "money": 89,
+   "line": -10,
    "start": "2026-11-22T18:00Z",
    "matchup": "NO @ CHI",
    "date": "2026-11-22",
@@ -1226,9 +1232,9 @@
    "market": "spread",
    "public_side": "home",
    "public_name": "Chiefs",
-   "pct": 86,
-   "money": 77,
-   "line": -15.5,
+   "pct": 78,
+   "money": 67,
+   "line": -16.5,
    "start": "2026-11-22T18:00Z",
    "matchup": "ARI @ KC",
    "date": "2026-11-22",
@@ -1252,8 +1258,8 @@
    "market": "spread",
    "public_side": "away",
    "public_name": "Jets",
-   "pct": 84,
-   "money": 82,
+   "pct": 82,
+   "money": 78,
    "line": 3.5,
    "start": "2026-11-22T21:05Z",
    "matchup": "NYJ @ LAC",
@@ -1271,7 +1277,8 @@
    "start": "2026-11-15T21:05Z",
    "matchup": "LAR @ ARI",
    "date": "2026-11-15",
-   "result": null
+   "result": "public",
+   "final": "34-6"
   },
   "401873064-spread": {
    "id": "401873064",
@@ -1284,7 +1291,8 @@
    "start": "2026-11-16T01:20Z",
    "matchup": "PIT @ CIN",
    "date": "2026-11-15",
-   "result": null
+   "result": "public",
+   "final": "18-38"
   },
   "401873065-spread": {
    "id": "401873065",
@@ -1304,9 +1312,9 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 79,
-   "money": 81,
-   "line": 41.5,
+   "pct": 80,
+   "money": 78,
+   "line": 41,
    "start": "2026-11-22T18:00Z",
    "matchup": "ARI @ KC",
    "date": "2026-11-22",
@@ -1317,8 +1325,8 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 74,
-   "money": 68,
+   "pct": 72,
+   "money": 70,
    "line": 40.5,
    "start": "2026-11-22T21:25Z",
    "matchup": "LV @ DEN",
@@ -1343,7 +1351,7 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 74,
+   "pct": 77,
    "money": 85,
    "line": 38.5,
    "start": "2026-11-22T18:00Z",
@@ -1356,9 +1364,9 @@
    "market": "spread",
    "public_side": "home",
    "public_name": "Lions",
-   "pct": 70,
+   "pct": 74,
    "money": 78,
-   "line": -6,
+   "line": -5.5,
    "start": "2026-11-22T18:00Z",
    "matchup": "TB @ DET",
    "date": "2026-11-22",
@@ -1382,8 +1390,8 @@
    "market": "spread",
    "public_side": "away",
    "public_name": "Steelers",
-   "pct": 70,
-   "money": 60,
+   "pct": 72,
+   "money": 66,
    "line": -4.5,
    "start": "2026-11-22T18:00Z",
    "matchup": "PIT @ PHI",
@@ -1395,11 +1403,24 @@
    "market": "spread",
    "public_side": "home",
    "public_name": "Broncos",
-   "pct": 70,
-   "money": 83,
+   "pct": 72,
+   "money": 72,
    "line": -9.5,
    "start": "2026-11-22T21:25Z",
    "matchup": "LV @ DEN",
+   "date": "2026-11-22",
+   "result": null
+  },
+  "401873069-spread": {
+   "id": "401873069",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Jaguars",
+   "pct": 71,
+   "money": 60,
+   "line": -6.5,
+   "start": "2026-11-22T21:25Z",
+   "matchup": "JAX @ NYG",
    "date": "2026-11-22",
    "result": null
   }
