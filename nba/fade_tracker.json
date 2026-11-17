@@ -4183,7 +4183,8 @@
    "start": "2026-11-17T00:00Z",
    "matchup": "ORL @ BOS",
    "date": "2026-11-16",
-   "result": null
+   "result": "fade",
+   "final": "115-105"
   },
   "401909994-total": {
    "id": "401909994",
@@ -4196,7 +4197,8 @@
    "start": "2026-11-17T00:00Z",
    "matchup": "ORL @ BOS",
    "date": "2026-11-16",
-   "result": null
+   "result": "public",
+   "final": "115-105"
   },
   "401909996-total": {
    "id": "401909996",
@@ -4209,7 +4211,8 @@
    "start": "2026-11-17T00:00Z",
    "matchup": "MEM @ WSH",
    "date": "2026-11-16",
-   "result": null
+   "result": "public",
+   "final": "136-120"
   },
   "401909997-spread": {
    "id": "401909997",
@@ -4222,7 +4225,8 @@
    "start": "2026-11-17T00:30Z",
    "matchup": "PHI @ BKN",
    "date": "2026-11-16",
-   "result": null
+   "result": "public",
+   "final": "135-123"
   },
   "401909997-total": {
    "id": "401909997",
@@ -4235,7 +4239,8 @@
    "start": "2026-11-17T00:30Z",
    "matchup": "PHI @ BKN",
    "date": "2026-11-16",
-   "result": null
+   "result": "public",
+   "final": "135-123"
   },
   "401909998-total": {
    "id": "401909998",
@@ -4248,7 +4253,8 @@
    "start": "2026-11-17T00:30Z",
    "matchup": "HOU @ MIA",
    "date": "2026-11-16",
-   "result": null
+   "result": "public",
+   "final": "110-128"
   },
   "401910000-spread": {
    "id": "401910000",
@@ -4261,7 +4267,8 @@
    "start": "2026-11-17T01:00Z",
    "matchup": "GS @ NO",
    "date": "2026-11-16",
-   "result": null
+   "result": "fade",
+   "final": "94-115"
   },
   "401910000-total": {
    "id": "401910000",
@@ -4274,7 +4281,8 @@
    "start": "2026-11-17T01:00Z",
    "matchup": "GS @ NO",
    "date": "2026-11-16",
-   "result": null
+   "result": "fade",
+   "final": "94-115"
   },
   "401910001-total": {
    "id": "401910001",
@@ -4287,6 +4295,98 @@
    "start": "2026-11-17T02:00Z",
    "matchup": "PHX @ DEN",
    "date": "2026-11-16",
+   "result": "fade",
+   "final": "117-105"
+  },
+  "401910002-spread": {
+   "id": "401910002",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Knicks",
+   "pct": 74,
+   "money": 58,
+   "line": -2.5,
+   "start": "2026-11-18T00:30Z",
+   "matchup": "NY @ TOR",
+   "date": "2026-11-17",
+   "result": null
+  },
+  "401910002-total": {
+   "id": "401910002",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 88,
+   "money": 88,
+   "line": 216.5,
+   "start": "2026-11-18T00:30Z",
+   "matchup": "NY @ TOR",
+   "date": "2026-11-17",
+   "result": null
+  },
+  "401910003-total": {
+   "id": "401910003",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 71,
+   "money": 70,
+   "line": 226.5,
+   "start": "2026-11-18T01:00Z",
+   "matchup": "POR @ MIN",
+   "date": "2026-11-17",
+   "result": null
+  },
+  "401910004-total": {
+   "id": "401910004",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 90,
+   "money": 95,
+   "line": 221.5,
+   "start": "2026-11-18T01:00Z",
+   "matchup": "DET @ SA",
+   "date": "2026-11-17",
+   "result": null
+  },
+  "401910006-total": {
+   "id": "401910006",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 80,
+   "money": 90,
+   "line": 225.5,
+   "start": "2026-11-18T03:30Z",
+   "matchup": "UTAH @ LAC",
+   "date": "2026-11-17",
+   "result": null
+  },
+  "401910005-spread": {
+   "id": "401910005",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Lakers",
+   "pct": 83,
+   "money": 42,
+   "line": -7.5,
+   "start": "2026-11-18T04:00Z",
+   "matchup": "CHA @ LAL",
+   "date": "2026-11-17",
+   "result": null
+  },
+  "401910005-total": {
+   "id": "401910005",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 86,
+   "money": 40,
+   "line": 218.5,
+   "start": "2026-11-18T04:00Z",
+   "matchup": "CHA @ LAL",
+   "date": "2026-11-17",
    "result": null
   }
  }
