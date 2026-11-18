@@ -4337,7 +4337,8 @@
    "start": "2026-11-18T01:00Z",
    "matchup": "POR @ MIN",
    "date": "2026-11-17",
-   "result": null
+   "result": "fade",
+   "final": "105-106"
   },
   "401910004-total": {
    "id": "401910004",
@@ -4350,7 +4351,8 @@
    "start": "2026-11-18T01:00Z",
    "matchup": "DET @ SA",
    "date": "2026-11-17",
-   "result": null
+   "result": "fade",
+   "final": "105-93"
   },
   "401910006-total": {
    "id": "401910006",
@@ -4363,7 +4365,8 @@
    "start": "2026-11-18T03:30Z",
    "matchup": "UTAH @ LAC",
    "date": "2026-11-17",
-   "result": null
+   "result": "public",
+   "final": "132-107"
   },
   "401910005-spread": {
    "id": "401910005",
@@ -4376,7 +4379,8 @@
    "start": "2026-11-18T04:00Z",
    "matchup": "CHA @ LAL",
    "date": "2026-11-17",
-   "result": null
+   "result": "fade",
+   "final": "114-118"
   },
   "401910005-total": {
    "id": "401910005",
@@ -4389,7 +4393,8 @@
    "start": "2026-11-18T04:00Z",
    "matchup": "CHA @ LAL",
    "date": "2026-11-17",
-   "result": null
+   "result": "public",
+   "final": "114-118"
   },
   "401910003-spread": {
    "id": "401910003",
@@ -4402,7 +4407,8 @@
    "start": "2026-11-18T01:00Z",
    "matchup": "POR @ MIN",
    "date": "2026-11-17",
-   "result": null
+   "result": "fade",
+   "final": "105-106"
   },
   "401910006-spread": {
    "id": "401910006",
@@ -4415,16 +4421,17 @@
    "start": "2026-11-18T03:30Z",
    "matchup": "UTAH @ LAC",
    "date": "2026-11-17",
-   "result": null
+   "result": "fade",
+   "final": "132-107"
   },
   "401910008-spread": {
    "id": "401910008",
    "market": "spread",
    "public_side": "away",
    "public_name": "Rockets",
-   "pct": 77,
-   "money": 83,
-   "line": -6.5,
+   "pct": 73,
+   "money": 74,
+   "line": -7.5,
    "start": "2026-11-19T00:00Z",
    "matchup": "HOU @ IND",
    "date": "2026-11-18",
@@ -4435,8 +4442,8 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 84,
-   "money": 87,
+   "pct": 80,
+   "money": 82,
    "line": 224.5,
    "start": "2026-11-19T00:00Z",
    "matchup": "HOU @ IND",
@@ -4448,8 +4455,8 @@
    "market": "spread",
    "public_side": "home",
    "public_name": "Heat",
-   "pct": 79,
-   "money": 82,
+   "pct": 81,
+   "money": 88,
    "line": -12.5,
    "start": "2026-11-19T00:00Z",
    "matchup": "MIL @ MIA",
@@ -4461,8 +4468,8 @@
    "market": "spread",
    "public_side": "away",
    "public_name": "76ers",
-   "pct": 88,
-   "money": 39,
+   "pct": 83,
+   "money": 78,
    "line": -1.5,
    "start": "2026-11-19T00:00Z",
    "matchup": "PHI @ ORL",
@@ -4513,8 +4520,8 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 84,
-   "money": 71,
+   "pct": 70,
+   "money": 75,
    "line": 221.5,
    "start": "2026-11-19T01:00Z",
    "matchup": "GS @ DAL",
@@ -4526,8 +4533,8 @@
    "market": "spread",
    "public_side": "away",
    "public_name": "Celtics",
-   "pct": 74,
-   "money": 60,
+   "pct": 70,
+   "money": 74,
    "line": -2.5,
    "start": "2026-11-19T02:30Z",
    "matchup": "BOS @ DEN",
@@ -4544,6 +4551,84 @@
    "line": 221.5,
    "start": "2026-11-19T02:30Z",
    "matchup": "BOS @ DEN",
+   "date": "2026-11-18",
+   "result": null
+  },
+  "401910007-total": {
+   "id": "401910007",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 72,
+   "money": 74,
+   "line": 234.5,
+   "start": "2026-11-19T00:00Z",
+   "matchup": "MEM @ CLE",
+   "date": "2026-11-18",
+   "result": null
+  },
+  "401910013-spread": {
+   "id": "401910013",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Pistons",
+   "pct": 74,
+   "money": 52,
+   "line": -7.5,
+   "start": "2026-11-19T01:00Z",
+   "matchup": "DET @ NO",
+   "date": "2026-11-18",
+   "result": null
+  },
+  "401910013-total": {
+   "id": "401910013",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 74,
+   "money": 73,
+   "line": 229.5,
+   "start": "2026-11-19T01:00Z",
+   "matchup": "DET @ NO",
+   "date": "2026-11-18",
+   "result": null
+  },
+  "401910016-spread": {
+   "id": "401910016",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Mavericks",
+   "pct": 73,
+   "money": 79,
+   "line": -5.5,
+   "start": "2026-11-19T01:00Z",
+   "matchup": "GS @ DAL",
+   "date": "2026-11-18",
+   "result": null
+  },
+  "401910017-total": {
+   "id": "401910017",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 81,
+   "money": 82,
+   "line": 228.5,
+   "start": "2026-11-19T03:00Z",
+   "matchup": "UTAH @ LAL",
+   "date": "2026-11-18",
+   "result": null
+  },
+  "401910018-spread": {
+   "id": "401910018",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Suns",
+   "pct": 83,
+   "money": 55,
+   "line": -6.5,
+   "start": "2026-11-19T03:00Z",
+   "matchup": "PHX @ SAC",
    "date": "2026-11-18",
    "result": null
   }
