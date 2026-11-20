@@ -4659,7 +4659,8 @@
    "start": "2026-11-20T01:00Z",
    "matchup": "GS @ MEM",
    "date": "2026-11-19",
-   "result": null
+   "result": "public",
+   "final": "98-126"
   },
   "401910019-total": {
    "id": "401910019",
@@ -4672,7 +4673,8 @@
    "start": "2026-11-20T01:00Z",
    "matchup": "GS @ MEM",
    "date": "2026-11-19",
-   "result": null
+   "result": "fade",
+   "final": "98-126"
   },
   "401910020-total": {
    "id": "401910020",
@@ -4685,7 +4687,8 @@
    "start": "2026-11-20T01:00Z",
    "matchup": "POR @ MIL",
    "date": "2026-11-19",
-   "result": null
+   "result": "public",
+   "final": "124-114"
   },
   "401910021-total": {
    "id": "401910021",
@@ -4698,7 +4701,8 @@
    "start": "2026-11-20T01:00Z",
    "matchup": "NY @ MIN",
    "date": "2026-11-19",
-   "result": null
+   "result": "fade",
+   "final": "102-99"
   },
   "401910022-total": {
    "id": "401910022",
@@ -4711,16 +4715,17 @@
    "start": "2026-11-20T01:00Z",
    "matchup": "LAC @ SA",
    "date": "2026-11-19",
-   "result": null
+   "result": "public",
+   "final": "112-124"
   },
   "401909305-spread": {
    "id": "401909305",
    "market": "spread",
    "public_side": "home",
    "public_name": "Hawks",
-   "pct": 74,
-   "money": 81,
-   "line": -5.5,
+   "pct": 77,
+   "money": 82,
+   "line": -6.5,
    "start": "2026-11-21T00:00Z",
    "matchup": "CHA @ ATL",
    "date": "2026-11-20",
@@ -4731,8 +4736,8 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 87,
-   "money": 89,
+   "pct": 85,
+   "money": 77,
    "line": 219.5,
    "start": "2026-11-21T00:00Z",
    "matchup": "CHA @ ATL",
@@ -4749,6 +4754,110 @@
    "line": -7.5,
    "start": "2026-11-21T00:30Z",
    "matchup": "IND @ CLE",
+   "date": "2026-11-20",
+   "result": null
+  },
+  "401909306-spread": {
+   "id": "401909306",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Magic",
+   "pct": 81,
+   "money": 83,
+   "line": -5.5,
+   "start": "2026-11-21T00:30Z",
+   "matchup": "ORL @ BKN",
+   "date": "2026-11-20",
+   "result": null
+  },
+  "401909306-total": {
+   "id": "401909306",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 76,
+   "money": 63,
+   "line": 223.5,
+   "start": "2026-11-21T00:30Z",
+   "matchup": "ORL @ BKN",
+   "date": "2026-11-20",
+   "result": null
+  },
+  "401909308-total": {
+   "id": "401909308",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 77,
+   "money": 74,
+   "line": 217.5,
+   "start": "2026-11-21T00:30Z",
+   "matchup": "TOR @ DET",
+   "date": "2026-11-20",
+   "result": null
+  },
+  "401909310-total": {
+   "id": "401909310",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 72,
+   "money": 73,
+   "line": 229.5,
+   "start": "2026-11-21T01:00Z",
+   "matchup": "NO @ OKC",
+   "date": "2026-11-20",
+   "result": null
+  },
+  "401909311-spread": {
+   "id": "401909311",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Suns",
+   "pct": 74,
+   "money": 72,
+   "line": -4.5,
+   "start": "2026-11-21T02:30Z",
+   "matchup": "PHX @ UTAH",
+   "date": "2026-11-20",
+   "result": null
+  },
+  "401909311-total": {
+   "id": "401909311",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 77,
+   "money": 82,
+   "line": 227.5,
+   "start": "2026-11-21T02:30Z",
+   "matchup": "PHX @ UTAH",
+   "date": "2026-11-20",
+   "result": null
+  },
+  "401909312-total": {
+   "id": "401909312",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 75,
+   "money": 59,
+   "line": 225.5,
+   "start": "2026-11-21T03:00Z",
+   "matchup": "HOU @ DEN",
+   "date": "2026-11-20",
+   "result": null
+  },
+  "401909313-total": {
+   "id": "401909313",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 70,
+   "money": 77,
+   "line": 231.5,
+   "start": "2026-11-21T03:00Z",
+   "matchup": "SAC @ LAL",
    "date": "2026-11-20",
    "result": null
   }
