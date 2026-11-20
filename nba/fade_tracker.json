@@ -4712,6 +4712,45 @@
    "matchup": "LAC @ SA",
    "date": "2026-11-19",
    "result": null
+  },
+  "401909305-spread": {
+   "id": "401909305",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Hawks",
+   "pct": 74,
+   "money": 81,
+   "line": -5.5,
+   "start": "2026-11-21T00:00Z",
+   "matchup": "CHA @ ATL",
+   "date": "2026-11-20",
+   "result": null
+  },
+  "401909305-total": {
+   "id": "401909305",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 87,
+   "money": 89,
+   "line": 219.5,
+   "start": "2026-11-21T00:00Z",
+   "matchup": "CHA @ ATL",
+   "date": "2026-11-20",
+   "result": null
+  },
+  "401909307-spread": {
+   "id": "401909307",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Cavaliers",
+   "pct": 72,
+   "money": 74,
+   "line": -7.5,
+   "start": "2026-11-21T00:30Z",
+   "matchup": "IND @ CLE",
+   "date": "2026-11-20",
+   "result": null
   }
  }
 }
