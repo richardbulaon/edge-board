@@ -4827,7 +4827,8 @@
    "start": "2026-11-21T02:30Z",
    "matchup": "PHX @ UTAH",
    "date": "2026-11-20",
-   "result": null
+   "result": "public",
+   "final": "111-101"
   },
   "401909311-total": {
    "id": "401909311",
@@ -4840,7 +4841,8 @@
    "start": "2026-11-21T02:30Z",
    "matchup": "PHX @ UTAH",
    "date": "2026-11-20",
-   "result": null
+   "result": "fade",
+   "final": "111-101"
   },
   "401909312-total": {
    "id": "401909312",
@@ -4853,7 +4855,8 @@
    "start": "2026-11-21T03:00Z",
    "matchup": "HOU @ DEN",
    "date": "2026-11-20",
-   "result": null
+   "result": "public",
+   "final": "124-133"
   },
   "401909313-total": {
    "id": "401909313",
@@ -4866,7 +4869,8 @@
    "start": "2026-11-21T03:00Z",
    "matchup": "SAC @ LAL",
    "date": "2026-11-20",
-   "result": null
+   "result": "fade",
+   "final": "104-106"
   },
   "401909307-total": {
    "id": "401909307",
@@ -4893,7 +4897,8 @@
    "start": "2026-11-21T03:00Z",
    "matchup": "SAC @ LAL",
    "date": "2026-11-20",
-   "result": null
+   "result": "public",
+   "final": "104-106"
   },
   "401910023-spread": {
    "id": "401910023",
@@ -4926,9 +4931,9 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 79,
-   "money": 87,
-   "line": 217.5,
+   "pct": 78,
+   "money": 81,
+   "line": 216.5,
    "start": "2026-11-22T00:30Z",
    "matchup": "POR @ NY",
    "date": "2026-11-21",
@@ -4939,8 +4944,8 @@
    "market": "spread",
    "public_side": "home",
    "public_name": "Mavericks",
-   "pct": 75,
-   "money": 82,
+   "pct": 71,
+   "money": 75,
    "line": -5.5,
    "start": "2026-11-22T01:00Z",
    "matchup": "LAC @ DAL",
@@ -4965,9 +4970,9 @@
    "market": "spread",
    "public_side": "away",
    "public_name": "Pelicans",
-   "pct": 73,
-   "money": 60,
-   "line": 16.5,
+   "pct": 72,
+   "money": 71,
+   "line": 17.5,
    "start": "2026-11-22T01:00Z",
    "matchup": "NO @ SA",
    "date": "2026-11-21",
@@ -4983,6 +4988,19 @@
    "line": 226.5,
    "start": "2026-11-22T01:00Z",
    "matchup": "NO @ SA",
+   "date": "2026-11-21",
+   "result": null
+  },
+  "401910028-total": {
+   "id": "401910028",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 73,
+   "money": 74,
+   "line": 217.5,
+   "start": "2026-11-22T03:00Z",
+   "matchup": "BOS @ SAC",
    "date": "2026-11-21",
    "result": null
   }
