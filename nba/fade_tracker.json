@@ -4911,7 +4911,8 @@
    "start": "2026-11-21T18:00Z",
    "matchup": "MIL @ PHI",
    "date": "2026-11-21",
-   "result": null
+   "result": "fade",
+   "final": "129-132"
   },
   "401910023-total": {
    "id": "401910023",
@@ -4924,7 +4925,8 @@
    "start": "2026-11-21T18:00Z",
    "matchup": "MIL @ PHI",
    "date": "2026-11-21",
-   "result": null
+   "result": "public",
+   "final": "129-132"
   },
   "401910024-total": {
    "id": "401910024",
@@ -4983,9 +4985,9 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 74,
-   "money": 74,
-   "line": 227.5,
+   "pct": 77,
+   "money": 76,
+   "line": 229.5,
    "start": "2026-11-22T01:00Z",
    "matchup": "NO @ SA",
    "date": "2026-11-21",
