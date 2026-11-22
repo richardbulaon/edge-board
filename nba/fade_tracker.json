@@ -5037,6 +5037,58 @@
    "matchup": "BOS @ GS",
    "date": "2026-11-22",
    "result": null
+  },
+  "401910030-spread": {
+   "id": "401910030",
+   "market": "spread",
+   "public_side": "home",
+   "public_name": "Heat",
+   "pct": 70,
+   "money": 75,
+   "line": -3.5,
+   "start": "2026-11-22T23:00Z",
+   "matchup": "OKC @ MIA",
+   "date": "2026-11-22",
+   "result": null
+  },
+  "401910033-spread": {
+   "id": "401910033",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Mavericks",
+   "pct": 71,
+   "money": 59,
+   "line": -1.5,
+   "start": "2026-11-23T00:00Z",
+   "matchup": "DAL @ UTAH",
+   "date": "2026-11-22",
+   "result": null
+  },
+  "401910034-total": {
+   "id": "401910034",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 73,
+   "money": 65,
+   "line": 213.5,
+   "start": "2026-11-23T01:00Z",
+   "matchup": "IND @ NY",
+   "date": "2026-11-22",
+   "result": null
+  },
+  "401910035-total": {
+   "id": "401910035",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 70,
+   "money": 66,
+   "line": 210.5,
+   "start": "2026-11-23T01:30Z",
+   "matchup": "BOS @ GS",
+   "date": "2026-11-22",
+   "result": null
   }
  }
 }
