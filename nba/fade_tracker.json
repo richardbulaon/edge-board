@@ -4939,7 +4939,8 @@
    "start": "2026-11-22T00:30Z",
    "matchup": "POR @ NY",
    "date": "2026-11-21",
-   "result": null
+   "result": "fade",
+   "final": "96-97"
   },
   "401910025-spread": {
    "id": "401910025",
@@ -4952,7 +4953,8 @@
    "start": "2026-11-22T01:00Z",
    "matchup": "LAC @ DAL",
    "date": "2026-11-21",
-   "result": null
+   "result": "public",
+   "final": "100-110"
   },
   "401910026-total": {
    "id": "401910026",
@@ -4965,7 +4967,8 @@
    "start": "2026-11-22T01:00Z",
    "matchup": "MEM @ MIN",
    "date": "2026-11-21",
-   "result": null
+   "result": "fade",
+   "final": "95-104"
   },
   "401910027-spread": {
    "id": "401910027",
@@ -4978,7 +4981,8 @@
    "start": "2026-11-22T01:00Z",
    "matchup": "NO @ SA",
    "date": "2026-11-21",
-   "result": null
+   "result": "fade",
+   "final": "91-114"
   },
   "401910027-total": {
    "id": "401910027",
@@ -4991,7 +4995,8 @@
    "start": "2026-11-22T01:00Z",
    "matchup": "NO @ SA",
    "date": "2026-11-21",
-   "result": null
+   "result": "fade",
+   "final": "91-114"
   },
   "401910028-total": {
    "id": "401910028",
@@ -5004,6 +5009,33 @@
    "start": "2026-11-22T03:00Z",
    "matchup": "BOS @ SAC",
    "date": "2026-11-21",
+   "result": "fade",
+   "final": "96-97"
+  },
+  "401910032-spread": {
+   "id": "401910032",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Nuggets",
+   "pct": 77,
+   "money": 77,
+   "line": -8.5,
+   "start": "2026-11-23T00:00Z",
+   "matchup": "DEN @ CHI",
+   "date": "2026-11-22",
+   "result": null
+  },
+  "401910035-spread": {
+   "id": "401910035",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Celtics",
+   "pct": 72,
+   "money": 71,
+   "line": -9.5,
+   "start": "2026-11-23T01:30Z",
+   "matchup": "BOS @ GS",
+   "date": "2026-11-22",
    "result": null
   }
  }
