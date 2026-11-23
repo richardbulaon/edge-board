@@ -5023,7 +5023,8 @@
    "start": "2026-11-23T00:00Z",
    "matchup": "DEN @ CHI",
    "date": "2026-11-22",
-   "result": null
+   "result": "fade",
+   "final": "151-145"
   },
   "401910035-spread": {
    "id": "401910035",
@@ -5036,7 +5037,8 @@
    "start": "2026-11-23T01:30Z",
    "matchup": "BOS @ GS",
    "date": "2026-11-22",
-   "result": null
+   "result": "fade",
+   "final": "87-88"
   },
   "401910030-spread": {
    "id": "401910030",
@@ -5049,7 +5051,8 @@
    "start": "2026-11-22T23:00Z",
    "matchup": "OKC @ MIA",
    "date": "2026-11-22",
-   "result": null
+   "result": "public",
+   "final": "113-123"
   },
   "401910033-spread": {
    "id": "401910033",
@@ -5062,7 +5065,8 @@
    "start": "2026-11-23T00:00Z",
    "matchup": "DAL @ UTAH",
    "date": "2026-11-22",
-   "result": null
+   "result": "fade",
+   "final": "116-114"
   },
   "401910034-total": {
    "id": "401910034",
@@ -5075,7 +5079,8 @@
    "start": "2026-11-23T01:00Z",
    "matchup": "IND @ NY",
    "date": "2026-11-22",
-   "result": null
+   "result": "public",
+   "final": "106-113"
   },
   "401910035-total": {
    "id": "401910035",
@@ -5088,7 +5093,8 @@
    "start": "2026-11-23T01:30Z",
    "matchup": "BOS @ GS",
    "date": "2026-11-22",
-   "result": null
+   "result": "fade",
+   "final": "87-88"
   },
   "401910031-spread": {
    "id": "401910031",
@@ -5101,6 +5107,124 @@
    "start": "2026-11-23T00:00Z",
    "matchup": "ORL @ WSH",
    "date": "2026-11-22",
+   "result": "public",
+   "final": "96-116"
+  },
+  "401910036-spread": {
+   "id": "401910036",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Grizzlies",
+   "pct": 73,
+   "money": 79,
+   "line": -3.5,
+   "start": "2026-11-24T00:00Z",
+   "matchup": "MEM @ CHA",
+   "date": "2026-11-23",
+   "result": null
+  },
+  "401910036-total": {
+   "id": "401910036",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 88,
+   "money": 57,
+   "line": 216.5,
+   "start": "2026-11-24T00:00Z",
+   "matchup": "MEM @ CHA",
+   "date": "2026-11-23",
+   "result": null
+  },
+  "401910039-total": {
+   "id": "401910039",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 89,
+   "money": 87,
+   "line": 224.5,
+   "start": "2026-11-24T00:30Z",
+   "matchup": "MIL @ TOR",
+   "date": "2026-11-23",
+   "result": null
+  },
+  "401910042-spread": {
+   "id": "401910042",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Suns",
+   "pct": 71,
+   "money": 68,
+   "line": -3.5,
+   "start": "2026-11-24T01:00Z",
+   "matchup": "PHX @ NO",
+   "date": "2026-11-23",
+   "result": null
+  },
+  "401910042-total": {
+   "id": "401910042",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 74,
+   "money": 73,
+   "line": 232.5,
+   "start": "2026-11-24T01:00Z",
+   "matchup": "PHX @ NO",
+   "date": "2026-11-23",
+   "result": null
+  },
+  "401910043-total": {
+   "id": "401910043",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 87,
+   "money": 89,
+   "line": 225.5,
+   "start": "2026-11-24T01:30Z",
+   "matchup": "LAC @ HOU",
+   "date": "2026-11-23",
+   "result": null
+  },
+  "401910044-total": {
+   "id": "401910044",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 96,
+   "money": 94,
+   "line": 228.5,
+   "start": "2026-11-24T03:00Z",
+   "matchup": "UTAH @ LAL",
+   "date": "2026-11-23",
+   "result": null
+  },
+  "401910045-spread": {
+   "id": "401910045",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "Spurs",
+   "pct": 76,
+   "money": 75,
+   "line": -10.5,
+   "start": "2026-11-24T03:00Z",
+   "matchup": "SA @ SAC",
+   "date": "2026-11-23",
+   "result": null
+  },
+  "401910045-total": {
+   "id": "401910045",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 76,
+   "money": 74,
+   "line": 224.5,
+   "start": "2026-11-24T03:00Z",
+   "matchup": "SA @ SAC",
+   "date": "2026-11-23",
    "result": null
   }
  }
