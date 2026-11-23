@@ -1213,7 +1213,8 @@
    "start": "2026-11-22T18:00Z",
    "matchup": "MIA @ BUF",
    "date": "2026-11-22",
-   "result": null
+   "result": "public",
+   "final": "9-26"
   },
   "401873071-spread": {
    "id": "401873071",
@@ -1226,7 +1227,8 @@
    "start": "2026-11-22T18:00Z",
    "matchup": "NO @ CHI",
    "date": "2026-11-22",
-   "result": null
+   "result": "fade",
+   "final": "13-21"
   },
   "401873067-spread": {
    "id": "401873067",
@@ -1253,7 +1255,8 @@
    "start": "2026-11-22T18:00Z",
    "matchup": "BAL @ CAR",
    "date": "2026-11-22",
-   "result": null
+   "result": "fade",
+   "final": "33-35"
   },
   "401873074-spread": {
    "id": "401873074",
@@ -1266,7 +1269,8 @@
    "start": "2026-11-22T21:05Z",
    "matchup": "NYJ @ LAC",
    "date": "2026-11-22",
-   "result": null
+   "result": "public",
+   "final": "27-24"
   },
   "401873061-spread": {
    "id": "401873061",
@@ -1335,7 +1339,8 @@
    "start": "2026-11-22T21:25Z",
    "matchup": "LV @ DEN",
    "date": "2026-11-22",
-   "result": null
+   "result": "public",
+   "final": "24-38"
   },
   "401873066-spread": {
    "id": "401873066",
@@ -1362,7 +1367,8 @@
    "start": "2026-11-22T18:00Z",
    "matchup": "PIT @ PHI",
    "date": "2026-11-22",
-   "result": null
+   "result": "fade",
+   "final": "16-19"
   },
   "401873072-spread": {
    "id": "401873072",
@@ -1375,7 +1381,8 @@
    "start": "2026-11-22T18:00Z",
    "matchup": "TB @ DET",
    "date": "2026-11-22",
-   "result": null
+   "result": "public",
+   "final": "21-31"
   },
   "401873073-spread": {
    "id": "401873073",
@@ -1388,7 +1395,8 @@
    "start": "2026-11-22T18:00Z",
    "matchup": "TEN @ DAL",
    "date": "2026-11-22",
-   "result": null
+   "result": "fade",
+   "final": "30-51"
   },
   "401873076-spread": {
    "id": "401873076",
@@ -1401,7 +1409,8 @@
    "start": "2026-11-22T18:00Z",
    "matchup": "PIT @ PHI",
    "date": "2026-11-22",
-   "result": null
+   "result": "fade",
+   "final": "16-19"
   },
   "401873075-spread": {
    "id": "401873075",
@@ -1414,7 +1423,8 @@
    "start": "2026-11-22T21:25Z",
    "matchup": "LV @ DEN",
    "date": "2026-11-22",
-   "result": null
+   "result": "public",
+   "final": "24-38"
   },
   "401873069-spread": {
    "id": "401873069",
@@ -1427,7 +1437,8 @@
    "start": "2026-11-22T21:25Z",
    "matchup": "JAX @ NYG",
    "date": "2026-11-22",
-   "result": null
+   "result": "fade",
+   "final": "18-23"
   },
   "401873066-total": {
    "id": "401873066",
@@ -1454,7 +1465,8 @@
    "start": "2026-11-22T18:00Z",
    "matchup": "BAL @ CAR",
    "date": "2026-11-22",
-   "result": null
+   "result": "public",
+   "final": "33-35"
   },
   "401873069-total": {
    "id": "401873069",
@@ -1467,7 +1479,8 @@
    "start": "2026-11-22T21:25Z",
    "matchup": "JAX @ NYG",
    "date": "2026-11-22",
-   "result": null
+   "result": "fade",
+   "final": "18-23"
   },
   "401873070-total": {
    "id": "401873070",
@@ -1480,7 +1493,8 @@
    "start": "2026-11-22T18:00Z",
    "matchup": "MIA @ BUF",
    "date": "2026-11-22",
-   "result": null
+   "result": "fade",
+   "final": "9-26"
   },
   "401873073-total": {
    "id": "401873073",
@@ -1493,15 +1507,16 @@
    "start": "2026-11-22T18:00Z",
    "matchup": "TEN @ DAL",
    "date": "2026-11-22",
-   "result": null
+   "result": "public",
+   "final": "30-51"
   },
   "401873078-spread": {
    "id": "401873078",
    "market": "spread",
    "public_side": "away",
    "public_name": "Bengals",
-   "pct": 85,
-   "money": 75,
+   "pct": 86,
+   "money": 79,
    "line": -6,
    "start": "2026-11-24T01:15Z",
    "matchup": "CIN @ WSH",
@@ -1519,7 +1534,8 @@
    "start": "2026-11-22T18:00Z",
    "matchup": "TB @ DET",
    "date": "2026-11-22",
-   "result": null
+   "result": "public",
+   "final": "21-31"
   },
   "401873079-total": {
    "id": "401873079",
@@ -1528,7 +1544,7 @@
    "public_name": "Under",
    "pct": 93,
    "money": 95,
-   "line": 45.5,
+   "line": 44.5,
    "start": "2026-11-26T01:00Z",
    "matchup": "GB @ LAR",
    "date": "2026-11-25",
@@ -1580,7 +1596,7 @@
    "public_name": "Over",
    "pct": 74,
    "money": 75,
-   "line": 40.5,
+   "line": 39.5,
    "start": "2026-11-27T20:00Z",
    "matchup": "DEN @ PIT",
    "date": "2026-11-27",
@@ -1604,9 +1620,9 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 88,
-   "money": 92,
-   "line": 39.5,
+   "pct": 87,
+   "money": 91,
+   "line": 37.5,
    "start": "2026-11-29T21:05Z",
    "matchup": "NE @ LAC",
    "date": "2026-11-29",
@@ -1623,15 +1639,16 @@
    "start": "2026-11-22T18:00Z",
    "matchup": "NO @ CHI",
    "date": "2026-11-22",
-   "result": null
+   "result": "fade",
+   "final": "13-21"
   },
   "401873084-total": {
    "id": "401873084",
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 79,
-   "money": 83,
+   "pct": 78,
+   "money": 84,
    "line": 42.5,
    "start": "2026-11-29T18:00Z",
    "matchup": "ATL @ MIN",
@@ -1643,7 +1660,7 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 71,
+   "pct": 72,
    "money": 76,
    "line": 46.5,
    "start": "2026-11-29T21:25Z",
@@ -1657,8 +1674,8 @@
    "public_side": "over",
    "public_name": "Over",
    "pct": 70,
-   "money": 75,
-   "line": 41.5,
+   "money": 76,
+   "line": 40.5,
    "start": "2026-11-30T01:20Z",
    "matchup": "LV @ CLE",
    "date": "2026-11-29",
@@ -1671,7 +1688,7 @@
    "public_name": "Over",
    "pct": 83,
    "money": 80,
-   "line": 43.5,
+   "line": 41.5,
    "start": "2026-11-29T18:00Z",
    "matchup": "NYG @ IND",
    "date": "2026-11-29",
@@ -1684,7 +1701,7 @@
    "public_name": "Over",
    "pct": 85,
    "money": 88,
-   "line": 41.5,
+   "line": 40.5,
    "start": "2026-11-29T21:25Z",
    "matchup": "WSH @ ARI",
    "date": "2026-11-29",
@@ -1710,7 +1727,7 @@
    "public_name": "Over",
    "pct": 80,
    "money": 73,
-   "line": 42.5,
+   "line": 43.5,
    "start": "2026-12-01T01:15Z",
    "matchup": "CAR @ TB",
    "date": "2026-11-30",
@@ -1735,8 +1752,8 @@
    "public_side": "over",
    "public_name": "Over",
    "pct": 79,
-   "money": 78,
-   "line": 44.5,
+   "money": 79,
+   "line": 46.5,
    "start": "2026-11-29T18:00Z",
    "matchup": "BAL @ HOU",
    "date": "2026-11-29",
@@ -1749,7 +1766,7 @@
    "public_name": "Jaguars",
    "pct": 80,
    "money": 78,
-   "line": -14.5,
+   "line": -14,
    "start": "2026-11-29T18:00Z",
    "matchup": "TEN @ JAX",
    "date": "2026-11-29",
