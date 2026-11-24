@@ -5121,7 +5121,8 @@
    "start": "2026-11-24T00:00Z",
    "matchup": "MEM @ CHA",
    "date": "2026-11-23",
-   "result": null
+   "result": "public",
+   "final": "117-111"
   },
   "401910036-total": {
    "id": "401910036",
@@ -5134,7 +5135,8 @@
    "start": "2026-11-24T00:00Z",
    "matchup": "MEM @ CHA",
    "date": "2026-11-23",
-   "result": null
+   "result": "public",
+   "final": "117-111"
   },
   "401910039-total": {
    "id": "401910039",
@@ -5147,7 +5149,8 @@
    "start": "2026-11-24T00:30Z",
    "matchup": "MIL @ TOR",
    "date": "2026-11-23",
-   "result": null
+   "result": "public",
+   "final": "116-111"
   },
   "401910042-spread": {
    "id": "401910042",
@@ -5160,7 +5163,8 @@
    "start": "2026-11-24T01:00Z",
    "matchup": "PHX @ NO",
    "date": "2026-11-23",
-   "result": null
+   "result": "public",
+   "final": "123-119"
   },
   "401910042-total": {
    "id": "401910042",
@@ -5173,7 +5177,8 @@
    "start": "2026-11-24T01:00Z",
    "matchup": "PHX @ NO",
    "date": "2026-11-23",
-   "result": null
+   "result": "public",
+   "final": "123-119"
   },
   "401910043-total": {
    "id": "401910043",
@@ -5186,7 +5191,8 @@
    "start": "2026-11-24T01:30Z",
    "matchup": "LAC @ HOU",
    "date": "2026-11-23",
-   "result": null
+   "result": "fade",
+   "final": "104-116"
   },
   "401910044-total": {
    "id": "401910044",
@@ -5238,7 +5244,8 @@
    "start": "2026-11-24T00:00Z",
    "matchup": "POR @ PHI",
    "date": "2026-11-23",
-   "result": null
+   "result": "fade",
+   "final": "128-111"
   },
   "401910038-spread": {
    "id": "401910038",
@@ -5251,7 +5258,8 @@
    "start": "2026-11-24T00:30Z",
    "matchup": "OKC @ IND",
    "date": "2026-11-23",
-   "result": null
+   "result": "fade",
+   "final": "120-125"
   },
   "401910041-total": {
    "id": "401910041",
@@ -5264,7 +5272,8 @@
    "start": "2026-11-24T01:00Z",
    "matchup": "CLE @ CHI",
    "date": "2026-11-23",
-   "result": null
+   "result": "fade",
+   "final": "108-122"
   },
   "401910043-spread": {
    "id": "401910043",
@@ -5277,6 +5286,46 @@
    "start": "2026-11-24T01:30Z",
    "matchup": "LAC @ HOU",
    "date": "2026-11-23",
+   "result": "public",
+   "final": "104-116"
+  },
+  "401909314-total": {
+   "id": "401909314",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 81,
+   "money": 77,
+   "line": 213.5,
+   "start": "2026-11-25T00:00Z",
+   "matchup": "DET @ ORL",
+   "date": "2026-11-24",
+   "result": null
+  },
+  "401909315-total": {
+   "id": "401909315",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 82,
+   "money": 83,
+   "line": 217.5,
+   "start": "2026-11-25T01:00Z",
+   "matchup": "BOS @ WSH",
+   "date": "2026-11-24",
+   "result": null
+  },
+  "401909316-total": {
+   "id": "401909316",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 76,
+   "money": 85,
+   "line": 231.5,
+   "start": "2026-11-25T03:00Z",
+   "matchup": "DAL @ DEN",
+   "date": "2026-11-24",
    "result": null
   }
  }
