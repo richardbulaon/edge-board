@@ -5345,7 +5345,8 @@
    "start": "2026-11-25T22:00Z",
    "matchup": "MIA @ PHI",
    "date": "2026-11-25",
-   "result": null
+   "result": "fade",
+   "final": "104-111"
   },
   "401909319-total": {
    "id": "401909319",
@@ -5457,8 +5458,8 @@
    "public_side": "over",
    "public_name": "Over",
    "pct": 74,
-   "money": 65,
-   "line": 216.5,
+   "money": 59,
+   "line": 215.5,
    "start": "2026-11-26T03:00Z",
    "matchup": "SAC @ GS",
    "date": "2026-11-25",
@@ -5469,8 +5470,8 @@
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 74,
-   "money": 71,
+   "pct": 79,
+   "money": 81,
    "line": 225.5,
    "start": "2026-11-26T03:00Z",
    "matchup": "SA @ POR",
