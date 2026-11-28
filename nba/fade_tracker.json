@@ -5541,7 +5541,8 @@
    "start": "2026-11-28T02:30Z",
    "matchup": "LAL @ SA",
    "date": "2026-11-27",
-   "result": null
+   "result": "fade",
+   "final": "96-99"
   },
   "401909327-total": {
    "id": "401909327",
@@ -5582,7 +5583,8 @@
    "start": "2026-11-28T01:30Z",
    "matchup": "MEM @ MIN",
    "date": "2026-11-27",
-   "result": null
+   "result": "public",
+   "final": "114-109"
   },
   "401909332-spread": {
    "id": "401909332",
@@ -5595,7 +5597,8 @@
    "start": "2026-11-28T02:00Z",
    "matchup": "DAL @ PHX",
    "date": "2026-11-27",
-   "result": null
+   "result": "public",
+   "final": "113-109"
   },
   "401909332-total": {
    "id": "401909332",
@@ -5608,7 +5611,8 @@
    "start": "2026-11-28T02:00Z",
    "matchup": "DAL @ PHX",
    "date": "2026-11-27",
-   "result": null
+   "result": "fade",
+   "final": "113-109"
   },
   "401909336-total": {
    "id": "401909336",
@@ -5621,7 +5625,8 @@
    "start": "2026-11-28T02:30Z",
    "matchup": "GS @ POR",
    "date": "2026-11-27",
-   "result": null
+   "result": "fade",
+   "final": "94-116"
   },
   "401909327-spread": {
    "id": "401909327",
@@ -5648,18 +5653,45 @@
    "start": "2026-11-28T02:30Z",
    "matchup": "GS @ POR",
    "date": "2026-11-27",
-   "result": null
+   "result": "public",
+   "final": "94-116"
   },
   "401910047-total": {
    "id": "401910047",
    "market": "total",
    "public_side": "over",
    "public_name": "Over",
-   "pct": 82,
-   "money": 91,
+   "pct": 74,
+   "money": 79,
    "line": 213.5,
    "start": "2026-11-28T23:00Z",
    "matchup": "BKN @ CHA",
+   "date": "2026-11-28",
+   "result": null
+  },
+  "401910050-spread": {
+   "id": "401910050",
+   "market": "spread",
+   "public_side": "away",
+   "public_name": "76ers",
+   "pct": 72,
+   "money": 66,
+   "line": 12.5,
+   "start": "2026-11-29T01:30Z",
+   "matchup": "PHI @ HOU",
+   "date": "2026-11-28",
+   "result": null
+  },
+  "401910050-total": {
+   "id": "401910050",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 74,
+   "money": 74,
+   "line": 219.5,
+   "start": "2026-11-29T01:30Z",
+   "matchup": "PHI @ HOU",
    "date": "2026-11-28",
    "result": null
   }
