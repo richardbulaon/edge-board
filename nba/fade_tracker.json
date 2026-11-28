@@ -5499,7 +5499,8 @@
    "start": "2026-11-28T00:00Z",
    "matchup": "MIA @ NY",
    "date": "2026-11-27",
-   "result": null
+   "result": "fade",
+   "final": "108-105"
   },
   "401909328-spread": {
    "id": "401909328",
@@ -5512,7 +5513,8 @@
    "start": "2026-11-28T00:30Z",
    "matchup": "PHI @ IND",
    "date": "2026-11-27",
-   "result": null
+   "result": "public",
+   "final": "111-87"
   },
   "401909330-total": {
    "id": "401909330",
@@ -5525,7 +5527,8 @@
    "start": "2026-11-28T01:00Z",
    "matchup": "ATL @ BOS",
    "date": "2026-11-27",
-   "result": null
+   "result": "fade",
+   "final": "87-86"
   },
   "401909333-total": {
    "id": "401909333",
@@ -5551,7 +5554,8 @@
    "start": "2026-11-28T00:30Z",
    "matchup": "MIL @ DET",
    "date": "2026-11-27",
-   "result": null
+   "result": "fade",
+   "final": "98-113"
   },
   "401909329-total": {
    "id": "401909329",
@@ -5564,7 +5568,8 @@
    "start": "2026-11-28T00:30Z",
    "matchup": "BKN @ TOR",
    "date": "2026-11-27",
-   "result": null
+   "result": "public",
+   "final": "100-124"
   },
   "401909331-total": {
    "id": "401909331",
@@ -5629,7 +5634,8 @@
    "start": "2026-11-28T00:30Z",
    "matchup": "MIL @ DET",
    "date": "2026-11-27",
-   "result": null
+   "result": "public",
+   "final": "98-113"
   },
   "401909336-spread": {
    "id": "401909336",
@@ -5642,6 +5648,19 @@
    "start": "2026-11-28T02:30Z",
    "matchup": "GS @ POR",
    "date": "2026-11-27",
+   "result": null
+  },
+  "401910047-total": {
+   "id": "401910047",
+   "market": "total",
+   "public_side": "over",
+   "public_name": "Over",
+   "pct": 82,
+   "money": 91,
+   "line": 213.5,
+   "start": "2026-11-28T23:00Z",
+   "matchup": "BKN @ CHA",
+   "date": "2026-11-28",
    "result": null
   }
  }
